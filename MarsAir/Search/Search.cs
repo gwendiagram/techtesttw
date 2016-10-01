@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
 using FluentAssertions;
 using Gauge.CSharp.Lib.Attribute;
 using OpenQA.Selenium;
@@ -42,6 +39,21 @@ namespace MarsAir.Search
             var selectElement = new SelectElement(directionField);
             selectElement.SelectByText(month);
 
+        }
+
+        [Step("Press <value>")]
+        public void PressValue(string value)
+        {
+            var buttonOrLink = _driver.FindElement(By.CssSelector(string.Format("input[type = {0}", value)));
+            buttonOrLink.Click();
+
+        }
+
+        [Step("Assert user is informed, <availability>")]
+        public void AssertAvailability(string availability)
+        {
+            var availabilityTest = _driver.FindElement(By.Id("content"));
+            availabilityTest.Text.Should().Contain(availability);
         }
     }
 }
