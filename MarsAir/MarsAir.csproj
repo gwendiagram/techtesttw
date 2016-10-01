@@ -66,6 +66,7 @@
     <Compile Include="StepImplementation.cs" />
     <Compile Include="DriverFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebDriverExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Env\default\default.properties" />
