@@ -244,3 +244,27 @@ Total time taken: 11.037s
 16:05:51.640 Scenarios:	3 executed	3 passed	0 failed	0 skipped
 16:05:51.642 
 Total time taken: 11.991s
+16:30:23.553 # ﻿Flight Search
+16:30:23.562 ## Find available flight
+16:30:23.568 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:30:25.744 * Select "July" from the "departing" field
+16:30:26.006 * Select "December (two years from now)" from the "returning" field
+16:30:26.209 * Press "submit"
+16:30:26.548 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+16:30:26.820 ## Find unavailable flight
+16:30:26.823 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:30:27.322 * Select "December" from the "departing" field
+16:30:27.490 * Select "December (next year)" from the "returning" field
+16:30:27.660 * Press "submit"
+16:30:28.014 * Assert user is informed, "Sorry, there are no more seats available."
+16:30:28.167 ## Attempt to find flight where return is less than 1 year from departure
+16:30:28.171 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:30:28.670 * Select "December" from the "departing" field
+16:30:28.843 * Select "July (next year)" from the "returning" field
+16:30:29.015 * Press "submit"
+16:30:29.365 * Assert user is informed, "Unfortunately, this schedule is not possible. Please try again."
+16:30:31.302 Plugin [Html Report] with pid [6188] has exited
+16:30:31.402 Specifications:	1 executed	1 passed	0 failed	0 skipped
+16:30:31.405 Scenarios:	3 executed	3 passed	0 failed	0 skipped
+16:30:31.407 
+Total time taken: 12.874s
