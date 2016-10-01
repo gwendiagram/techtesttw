@@ -108,3 +108,139 @@ Total time taken: 13.866s
 15:20:07.880 Scenarios:	2 executed	2 passed	0 failed	0 skipped
 15:20:07.883 
 Total time taken: 8.309s
+15:44:48.246 # ﻿Flight Search
+15:44:48.253 ## Find available flight
+15:44:48.259 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:44:50.064 * Select "July" from the "departing" field
+15:44:50.348 * Select "December (two years from now)" from the "returning" field
+15:44:50.566 * Press "search"
+15:44:50.734 Failed Step: Press "search"
+15:44:50.735 Error Message: Unable to locate element: {"method":"css selector","selector":"input[type = search"}
+15:44:50.737 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at MarsAir.Search.Search.PressValue(String value) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 50
+15:44:50.748 ## Find unavailable flight
+15:44:51.918 Plugin [Html Report] with pid [8592] has exited
+15:44:52.019 Specifications:	1 executed	0 passed	1 failed	0 skipped
+15:44:52.022 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+15:44:52.025 
+Total time taken: 8.715s
+15:46:24.542 # ﻿Flight Search
+15:46:24.549 ## Find available flight
+15:46:24.555 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:46:26.322 * Select "July" from the "departing" field
+15:46:26.601 * Select "December (two years from now)" from the "returning" field
+15:46:26.816 * Press "search"
+15:46:27.000 Failed Step: Press "search"
+15:46:27.001 Error Message: Unable to locate element: {"method":"link text","selector":"search"}
+15:46:27.002 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByLinkText(String linkText)
+   at OpenQA.Selenium.By.<>c__DisplayClass6.<LinkText>b__4(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at MarsAir.Search.Search.PressValue(String value) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 50
+15:46:27.018 ## Find unavailable flight
+15:46:28.188 Plugin [Html Report] with pid [8940] has exited
+15:46:28.289 Specifications:	1 executed	0 passed	1 failed	0 skipped
+15:46:28.292 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+15:46:28.295 
+Total time taken: 8.585s
+15:47:06.555 # ﻿Flight Search
+15:47:06.562 ## Find available flight
+15:47:06.568 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:47:08.334 * Select "July" from the "departing" field
+15:47:08.622 * Select "December (two years from now)" from the "returning" field
+15:47:08.844 * Press "submit"
+15:47:09.027 Failed Step: Press "submit"
+15:47:09.028 Error Message: Unable to locate element: {"method":"link text","selector":"input[type = submit"}
+15:47:09.029 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByLinkText(String linkText)
+   at OpenQA.Selenium.By.<>c__DisplayClass6.<LinkText>b__4(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at MarsAir.Search.Search.PressValue(String value) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 50
+15:47:09.042 ## Find unavailable flight
+15:47:10.211 Plugin [Html Report] with pid [6684] has exited
+15:47:10.312 Specifications:	1 executed	0 passed	1 failed	0 skipped
+15:47:10.314 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+15:47:10.317 
+Total time taken: 8.564s
+15:47:49.715 # ﻿Flight Search
+15:47:49.723 ## Find available flight
+15:47:49.728 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:47:51.429 * Select "July" from the "departing" field
+15:47:51.712 * Select "December (two years from now)" from the "returning" field
+15:47:51.923 * Press "submit"
+15:47:52.294 ## Find unavailable flight
+15:47:53.459 Plugin [Html Report] with pid [8904] has exited
+15:47:53.560 Specifications:	1 executed	1 passed	0 failed	0 skipped
+15:47:53.563 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+15:47:53.566 
+Total time taken: 8.665s
+16:02:11.836 # ﻿Flight Search
+16:02:11.843 ## Find available flight
+16:02:11.848 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:02:14.066 * Select "July" from the "departing" field
+16:02:14.348 * Select "December (two years from now)" from the "returning" field
+16:02:14.563 * Press "submit"
+16:02:14.918 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+16:02:15.197 ## Find unavailable flight
+16:02:16.364 Plugin [Html Report] with pid [5788] has exited
+16:02:16.464 Specifications:	1 executed	1 passed	0 failed	0 skipped
+16:02:16.467 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+16:02:16.470 
+Total time taken: 9.514s
+16:03:28.786 # ﻿Flight Search
+16:03:28.794 ## Find available flight
+16:03:28.799 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:03:30.516 * Select "July" from the "departing" field
+16:03:30.795 * Select "December (two years from now)" from the "returning" field
+16:03:31.002 * Press "submit"
+16:03:31.387 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+16:03:31.669 ## Find unavailable flight
+16:03:31.671 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:03:32.198 * Select "December" from the "departing" field
+16:03:32.390 * Select "December (next year)" from the "returning" field
+16:03:32.576 * Press "submit"
+16:03:32.932 * Assert user is informed, "Sorry, there are no more seats available."
+16:03:34.872 Plugin [Html Report] with pid [7524] has exited
+16:03:34.974 Specifications:	1 executed	1 passed	0 failed	0 skipped
+16:03:34.976 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+16:03:34.978 
+Total time taken: 11.037s
+16:05:44.507 # ﻿Flight Search
+16:05:44.514 ## Find available flight
+16:05:44.519 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:05:46.071 * Select "July" from the "departing" field
+16:05:46.351 * Select "December (two years from now)" from the "returning" field
+16:05:46.559 * Press "submit"
+16:05:46.930 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+16:05:47.095 ## Find unavailable flight
+16:05:47.096 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:05:47.501 * Select "December" from the "departing" field
+16:05:47.688 * Select "December (next year)" from the "returning" field
+16:05:47.893 * Press "submit"
+16:05:48.261 * Assert user is informed, "Sorry, there are no more seats available."
+16:05:48.418 ## Attempt to find flight where return is less than 1 year from departure
+16:05:48.421 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:05:48.980 * Select "December" from the "departing" field
+16:05:49.168 * Select "July (next year)" from the "returning" field
+16:05:49.349 * Press "submit"
+16:05:49.715 * Assert user is informed, "Unfortunately, this schedule is not possible. Please try again."
+16:05:51.537 Plugin [Html Report] with pid [2244] has exited
+16:05:51.638 Specifications:	1 executed	1 passed	0 failed	0 skipped
+16:05:51.640 Scenarios:	3 executed	3 passed	0 failed	0 skipped
+16:05:51.642 
+Total time taken: 11.991s
