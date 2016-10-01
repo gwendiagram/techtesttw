@@ -1,0 +1,16 @@
+C:\Projects\MarsAir\MarsAir\bin\Debug\MarsAir.dll
+C:\Projects\MarsAir\MarsAir\bin\Debug\MarsAir.pdb
+C:\Projects\MarsAir\MarsAir\bin\Debug\FluentAssertions.Core.dll
+C:\Projects\MarsAir\MarsAir\bin\Debug\FluentAssertions.dll
+C:\Projects\MarsAir\MarsAir\bin\Debug\Gauge.CSharp.Lib.dll
+C:\Projects\MarsAir\MarsAir\bin\Debug\WebDriver.dll
+C:\Projects\MarsAir\MarsAir\bin\Debug\FluentAssertions.pdb
+C:\Projects\MarsAir\MarsAir\bin\Debug\FluentAssertions.xml
+C:\Projects\MarsAir\MarsAir\bin\Debug\FluentAssertions.Core.pdb
+C:\Projects\MarsAir\MarsAir\bin\Debug\FluentAssertions.Core.xml
+C:\Projects\MarsAir\MarsAir\bin\Debug\WebDriver.xml
+C:\Projects\MarsAir\MarsAir\obj\Debug\MarsAir.dll
+C:\Projects\MarsAir\MarsAir\obj\Debug\MarsAir.pdb
+C:\Projects\MarsAir\MarsAir\obj\Debug\MarsAir.csprojResolveAssemblyReference.cache
+C:\Projects\MarsAir\MarsAir\bin\Debug\WebDriver.Support.dll
+C:\Projects\MarsAir\MarsAir\bin\Debug\WebDriver.Support.xml

@@ -1,0 +1,110 @@
+15:09:54.614 Validation failed. The following steps have errors
+15:09:54.617 c:\Projects\MarsAir\MarsAir\Specs\FlightSearch.spec:13: Step implementation not found. Select "December (two years from now) from the "returning" field"
+15:09:54.624 c:\Projects\MarsAir\MarsAir\Specs\FlightSearch.spec:14: Step implementation not found. Press search
+15:09:54.629 c:\Projects\MarsAir\MarsAir\Specs\FlightSearch.spec:15: Step implementation not found. Assert user is informed, "Call now on 0800 MARSAIR to book!"
+15:09:54.635 c:\Projects\MarsAir\MarsAir\Specs\FlightSearch.spec:21: Step implementation not found. Select "December" from the departing field
+15:09:54.641 c:\Projects\MarsAir\MarsAir\Specs\FlightSearch.spec:22: Step implementation not found. Select "December (next year) from the returning field"
+15:09:54.648 c:\Projects\MarsAir\MarsAir\Specs\FlightSearch.spec:23: Step implementation not found. Press search
+15:09:54.653 c:\Projects\MarsAir\MarsAir\Specs\FlightSearch.spec:24: Step implementation not found. Assert user is informed, "Sorry, there are no more seats available."
+15:09:59.746 # ﻿Flight Search
+15:09:59.755 ## Get Started
+15:09:59.762 * Go to Gauge Get Started Page
+15:09:59.920 Failed Step: Go to Gauge Get Started Page
+15:09:59.920 Error Message: Unable to locate element: {"method":"link text","selector":"Get Started"}
+15:09:59.922 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByLinkText(String linkText)
+   at OpenQA.Selenium.By.<>c__DisplayClass6.<LinkText>b__4(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at MarsAir.StepImplementation.GoToGaugeGetStartedPage() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 37
+15:10:01.212 Plugin [Html Report] with pid [1400] has exited
+15:10:01.312 Specifications:	1 executed	0 passed	1 failed	0 skipped
+15:10:01.315 Scenarios:	1 executed	0 passed	1 failed	2 skipped
+15:10:01.319 
+Total time taken: 6.433s
+15:11:16.203 # ﻿Flight Search
+15:11:16.212 ## Find available flight
+15:11:16.220 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:11:16.347 Failed Step: Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:11:16.348 Error Message: Object reference not set to an instance of an object.
+15:11:16.349 Stacktrace: 
+   at MarsAir.Search.Search.NavigateTo(String url) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 21
+15:11:16.471 ## Find unavailable flight
+15:11:18.141 Plugin [Html Report] with pid [6168] has exited
+15:11:18.241 Specifications:	1 executed	0 passed	1 failed	0 skipped
+15:11:18.244 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+15:11:18.246 
+Total time taken: 6.913s
+15:13:32.623 # ﻿Flight Search
+15:13:32.631 ## Find available flight
+15:13:32.639 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:13:34.945 * Select "July" from the "departing" field
+15:13:35.228 Failed Step: Select "July" from the "departing" field
+15:13:35.229 Error Message: Cannot locate option with value: July
+15:13:35.230 Stacktrace: 
+   at OpenQA.Selenium.Support.UI.SelectElement.SelectByValue(String value)
+   at MarsAir.Search.Search.GoToGaugeGetStartedPage(String month, String direction) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 43
+15:13:35.237 ## Find unavailable flight
+15:13:37.448 Plugin [Html Report] with pid [4836] has exited
+15:13:37.549 Specifications:	1 executed	0 passed	1 failed	0 skipped
+15:13:37.552 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+15:13:37.555 
+Total time taken: 14.425s
+15:16:54.138 # ﻿Flight Search
+15:16:54.147 ## Find available flight
+15:16:54.156 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:16:55.858 * Select "July" from the "departing" field
+15:16:56.231 ## Find unavailable flight
+15:16:58.457 Plugin [Html Report] with pid [6200] has exited
+15:16:58.558 Specifications:	1 executed	1 passed	0 failed	0 skipped
+15:16:58.561 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+15:16:58.563 
+Total time taken: 14.039s
+15:17:37.094 # ﻿Flight Search
+15:17:37.102 ## Find available flight
+15:17:37.110 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:17:37.236 Failed Step: Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:17:37.237 Error Message: Object reference not set to an instance of an object.
+15:17:37.238 Stacktrace: 
+   at MarsAir.Search.Search.NavigateTo(String url) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 21
+15:17:37.366 ## Find unavailable flight
+15:17:39.032 Plugin [Html Report] with pid [7012] has exited
+15:17:39.132 Specifications:	1 executed	0 passed	1 failed	0 skipped
+15:17:39.134 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+15:17:39.137 
+Total time taken: 6.911s
+15:18:28.234 # ﻿Flight Search
+15:18:28.242 ## Find available flight
+15:18:28.250 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:18:29.843 * Select "July" from the "departing" field
+15:18:30.186 ## Find unavailable flight
+15:18:32.412 Plugin [Html Report] with pid [7048] has exited
+15:18:32.512 Specifications:	1 executed	1 passed	0 failed	0 skipped
+15:18:32.515 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+15:18:32.518 
+Total time taken: 13.799s
+15:18:50.910 # ﻿Flight Search
+15:18:50.919 ## Find available flight
+15:18:50.927 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:18:52.524 * Select "July" from the "departing" field
+15:18:52.880 ## Find unavailable flight
+15:18:55.122 Plugin [Html Report] with pid [7068] has exited
+15:18:55.223 Specifications:	1 executed	1 passed	0 failed	0 skipped
+15:18:55.228 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+15:18:55.233 
+Total time taken: 13.866s
+15:19:15.790 [ParseError] c:\Projects\MarsAir\MarsAir\Specs\FlightSearch.spec : line no: 13, String not terminated
+15:20:04.440 # ﻿Flight Search
+15:20:04.450 ## Find available flight
+15:20:04.457 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:20:06.123 * Select "July" from the "departing" field
+15:20:06.396 * Select "December (two years from now)" from the "returning" field
+15:20:06.600 ## Find unavailable flight
+15:20:07.775 Plugin [Html Report] with pid [4836] has exited
+15:20:07.877 Specifications:	1 executed	1 passed	0 failed	0 skipped
+15:20:07.880 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+15:20:07.883 
+Total time taken: 8.309s

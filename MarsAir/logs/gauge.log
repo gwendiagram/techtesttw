@@ -1,0 +1,145 @@
+Cannot locate a Project File in c:\Projects\MarsAir\MarsAir
+Cannot locate a Project File in c:\Projects\MarsAir\MarsAir
+Cannot locate a Project File in c:\Projects\MarsAir\MarsAir
+Cannot locate a Project File in c:\Projects\MarsAir\MarsAir
+14:05:55.294 Runner connection error: Timed out connecting to [::]:1791
+14:05:55.295 Error while killing runner: invalid argument
+14:05:55.298 Failed to start gauge API: Timed out connecting to [::]:1791
+14:06:19.623  create  manifest.json
+14:06:19.624  skip  manifest.json
+14:06:19.627  create  specs
+14:06:19.628  skip  specs
+14:06:19.629  create  specs/example.spec
+14:06:19.631  skip  specs/example.spec
+14:06:19.633  create  env
+14:06:19.633  create  env/default
+14:06:19.635  create  env/default/default.properties
+14:06:27.682 
+Successfully initialized the project. Run specifications with "gauge specs/"
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Error executing MarsAir.StepImplementation.Initialize
+14:06:37.386 Error Message: Cannot find Firefox binary in PATH or default install locations. Make sure Firefox is installed. OS appears to be: Vista
+14:06:37.388 Stacktrace: 
+   at OpenQA.Selenium.Firefox.Internal.Executable..ctor(String userSpecifiedBinaryPath)
+   at OpenQA.Selenium.Firefox.FirefoxBinary..ctor(String pathToFirefoxBinary)
+   at MarsAir.DriverFactory.GetDriver() in c:\Projects\MarsAir\MarsAir\DriverFactory.cs:line 21
+   at MarsAir.StepImplementation.Initialize() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 15
+14:06:37.793 Error Message: Object reference not set to an instance of an object.
+14:06:37.794 Stacktrace: 
+   at MarsAir.StepImplementation.Cleanup() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 21
+14:06:38.504 Plugin [Html Report] with pid [6860] has exited
+14:06:38.604 Specifications:	0 executed	0 passed	0 failed	0 skipped
+14:06:38.607 Scenarios:	0 executed	0 passed	0 failed	0 skipped
+14:06:38.609 
+Total time taken: 565ms
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Error executing MarsAir.StepImplementation.Initialize
+14:11:38.212 Error Message: Cannot find Firefox binary in PATH or default install locations. Make sure Firefox is installed. OS appears to be: Vista
+14:11:38.215 Stacktrace: 
+   at OpenQA.Selenium.Firefox.Internal.Executable..ctor(String userSpecifiedBinaryPath)
+   at OpenQA.Selenium.Firefox.FirefoxBinary..ctor(String pathToFirefoxBinary)
+   at MarsAir.DriverFactory.GetDriver() in c:\Projects\MarsAir\MarsAir\DriverFactory.cs:line 21
+   at MarsAir.StepImplementation.Initialize() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 15
+14:11:38.482 Error Message: Object reference not set to an instance of an object.
+14:11:38.484 Stacktrace: 
+   at MarsAir.StepImplementation.Cleanup() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 21
+14:11:38.590 Plugin [Html Report] with pid [8188] has exited
+14:11:38.691 Specifications:	0 executed	0 passed	0 failed	0 skipped
+14:11:38.693 Scenarios:	0 executed	0 passed	0 failed	0 skipped
+14:11:38.695 
+Total time taken: 420ms
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Error executing MarsAir.StepImplementation.Initialize
+14:20:57.292 Error Message: Cannot find Firefox binary in PATH or default install locations. Make sure Firefox is installed. OS appears to be: Vista
+14:20:57.294 Stacktrace: 
+   at OpenQA.Selenium.Firefox.Internal.Executable..ctor(String userSpecifiedBinaryPath)
+   at OpenQA.Selenium.Firefox.FirefoxBinary..ctor(String pathToFirefoxBinary)
+   at MarsAir.DriverFactory.GetDriver() in c:\Projects\MarsAir\MarsAir\DriverFactory.cs:line 21
+   at MarsAir.StepImplementation.Initialize() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 17
+14:20:57.466 Error Message: Object reference not set to an instance of an object.
+14:20:57.468 Stacktrace: 
+   at MarsAir.StepImplementation.Cleanup() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 23
+14:20:57.576 Plugin [Html Report] with pid [8308] has exited
+14:20:57.677 Specifications:	0 executed	0 passed	0 failed	0 skipped
+14:20:57.679 Scenarios:	0 executed	0 passed	0 failed	0 skipped
+14:20:57.682 
+Total time taken: 317ms
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Error executing MarsAir.StepImplementation.Initialize
+14:26:09.927 Error Message: Cannot find Firefox binary in PATH or default install locations. Make sure Firefox is installed. OS appears to be: Vista
+14:26:09.930 Stacktrace: 
+   at OpenQA.Selenium.Firefox.Internal.Executable..ctor(String userSpecifiedBinaryPath)
+   at OpenQA.Selenium.Firefox.FirefoxBinary..ctor(String pathToFirefoxBinary)
+   at MarsAir.DriverFactory.GetDriver() in c:\Projects\MarsAir\MarsAir\DriverFactory.cs:line 21
+   at MarsAir.StepImplementation.Initialize() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 17
+14:26:10.235 Error Message: Object reference not set to an instance of an object.
+14:26:10.237 Stacktrace: 
+   at MarsAir.StepImplementation.Cleanup() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 23
+14:26:10.348 Plugin [Html Report] with pid [4512] has exited
+14:26:10.448 Specifications:	0 executed	0 passed	0 failed	0 skipped
+14:26:10.450 Scenarios:	0 executed	0 passed	0 failed	0 skipped
+14:26:10.453 
+Total time taken: 560ms
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Error executing MarsAir.StepImplementation.Initialize
+14:34:15.375 Error Message: Cannot find Firefox binary in PATH or default install locations. Make sure Firefox is installed. OS appears to be: Vista
+14:34:15.377 Stacktrace: 
+   at OpenQA.Selenium.Firefox.Internal.Executable..ctor(String userSpecifiedBinaryPath)
+   at OpenQA.Selenium.Firefox.FirefoxBinary..ctor(String pathToFirefoxBinary)
+   at MarsAir.DriverFactory.GetDriver() in c:\Projects\MarsAir\MarsAir\DriverFactory.cs:line 21
+   at MarsAir.StepImplementation.Initialize() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 17
+14:34:15.662 Error Message: Object reference not set to an instance of an object.
+14:34:15.664 Stacktrace: 
+   at MarsAir.StepImplementation.Cleanup() in c:\Projects\MarsAir\MarsAir\StepImplementation.cs:line 23
+14:34:15.769 Plugin [Html Report] with pid [6212] has exited
+14:34:15.869 Specifications:	0 executed	0 passed	0 failed	0 skipped
+14:34:15.872 Scenarios:	0 executed	0 passed	0 failed	0 skipped
+14:34:15.875 
+Total time taken: 424ms
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+14:41:26.895 # ﻿Getting Started with Gauge
+14:41:26.905 ## Get Started
+14:41:26.912 * Navigate to Gauge homepage "http://getgauge.io"
+14:41:28.647 * Go to Gauge Get Started Page
+14:41:30.581 Plugin [Html Report] with pid [5316] has exited
+14:41:30.682 Specifications:	1 executed	1 passed	0 failed	0 skipped
+14:41:30.684 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+14:41:30.687 
+Total time taken: 9.31s
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+14:42:45.120 # ﻿Getting Started with Gauge
+14:42:45.129 ## Get Started
+14:42:45.136 * Navigate to Gauge homepage "http://getgauge.io"
+14:42:46.680 * Go to Gauge Get Started Page
+14:42:48.576 Plugin [Html Report] with pid [1856] has exited
+14:42:48.678 Specifications:	1 executed	1 passed	0 failed	0 skipped
+14:42:48.681 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+14:42:48.684 
+Total time taken: 8.424s
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Error executing MarsAir.StepImplementation.GoToGaugeGetStartedPage
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Error executing MarsAir.Search.Search.NavigateTo
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Error executing MarsAir.Search.Search.GoToGaugeGetStartedPage
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Error executing MarsAir.Search.Search.NavigateTo
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success

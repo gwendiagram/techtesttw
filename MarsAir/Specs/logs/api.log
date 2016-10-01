@@ -1,0 +1,136 @@
+15:09:54.457 Api Request Received: messageType:GetStepValueRequest messageId:63610931394446 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+15:09:54.458 Sending API response: messageType:GetStepValueResponse messageId:63610931394446 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+15:09:54.471 Api Request Received: messageType:GetStepValueRequest messageId:63610931394470 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+15:09:54.471 Sending API response: messageType:GetStepValueResponse messageId:63610931394470 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+15:09:54.471 Api Request Received: messageType:GetStepValueRequest messageId:63610931394471 stepValueRequest:<stepText:"Navigate to Gauge homepage <url>" hasInlineTable:false > 
+15:09:54.471 Sending API response: messageType:GetStepValueResponse messageId:63610931394471 stepValueResponse:<stepValue:<stepValue:"Navigate to Gauge homepage {}" parameterizedStepValue:"Navigate to Gauge homepage <url>" parameters:"url" > > 
+15:09:54.472 Api Request Received: messageType:GetStepValueRequest messageId:63610931394472 stepValueRequest:<stepText:"Go to Gauge Get Started Page" hasInlineTable:false > 
+15:09:54.472 Sending API response: messageType:GetStepValueResponse messageId:63610931394472 stepValueResponse:<stepValue:<stepValue:"Go to Gauge Get Started Page" parameterizedStepValue:"Go to Gauge Get Started Page" > > 
+15:09:54.535 Initializing concepts cache with 0 concepts
+15:09:54.539 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+15:09:54.539 Found 3 files
+15:09:54.540 Initializing specs cache with 2 specs
+15:09:54.540 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+15:09:54.540 Adding specs from c:\Projects\MarsAir\MarsAir\specs\example.spec
+15:09:54.543 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+15:09:54.543 Found 1 files
+15:09:54.608 Initializing steps cache with 16 steps
+15:11:10.969 Api Request Received: messageType:GetStepValueRequest messageId:63610931470958 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+15:11:10.970 Sending API response: messageType:GetStepValueResponse messageId:63610931470958 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+15:11:10.982 Api Request Received: messageType:GetStepValueRequest messageId:63610931470982 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+15:11:10.982 Sending API response: messageType:GetStepValueResponse messageId:63610931470982 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+15:11:10.983 Api Request Received: messageType:GetStepValueRequest messageId:63610931470983 stepValueRequest:<stepText:"Navigate to Gauge homepage <url>" hasInlineTable:false > 
+15:11:10.983 Sending API response: messageType:GetStepValueResponse messageId:63610931470983 stepValueResponse:<stepValue:<stepValue:"Navigate to Gauge homepage {}" parameterizedStepValue:"Navigate to Gauge homepage <url>" parameters:"url" > > 
+15:11:10.983 Api Request Received: messageType:GetStepValueRequest messageId:63610931470983 stepValueRequest:<stepText:"Go to Gauge Get Started Page" hasInlineTable:false > 
+15:11:10.983 Sending API response: messageType:GetStepValueResponse messageId:63610931470983 stepValueResponse:<stepValue:<stepValue:"Go to Gauge Get Started Page" parameterizedStepValue:"Go to Gauge Get Started Page" > > 
+15:11:11.046 Initializing concepts cache with 0 concepts
+15:11:11.050 Initializing specs cache with 2 specs
+15:11:11.050 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+15:11:11.051 Adding specs from c:\Projects\MarsAir\MarsAir\specs\example.spec
+15:11:11.053 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+15:11:11.053 Found 3 files
+15:11:11.055 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+15:11:11.055 Found 2 files
+15:11:11.105 Initializing steps cache with 7 steps
+15:13:22.747 Api Request Received: messageType:GetStepValueRequest messageId:63610931602737 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+15:13:22.748 Sending API response: messageType:GetStepValueResponse messageId:63610931602737 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+15:13:22.760 Api Request Received: messageType:GetStepValueRequest messageId:63610931602760 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+15:13:22.760 Sending API response: messageType:GetStepValueResponse messageId:63610931602760 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+15:13:22.761 Api Request Received: messageType:GetStepValueRequest messageId:63610931602760 stepValueRequest:<stepText:"Navigate to Gauge homepage <url>" hasInlineTable:false > 
+15:13:22.761 Sending API response: messageType:GetStepValueResponse messageId:63610931602760 stepValueResponse:<stepValue:<stepValue:"Navigate to Gauge homepage {}" parameterizedStepValue:"Navigate to Gauge homepage <url>" parameters:"url" > > 
+15:13:22.761 Api Request Received: messageType:GetStepValueRequest messageId:63610931602761 stepValueRequest:<stepText:"Go to Gauge Get Started Page" hasInlineTable:false > 
+15:13:22.761 Sending API response: messageType:GetStepValueResponse messageId:63610931602761 stepValueResponse:<stepValue:<stepValue:"Go to Gauge Get Started Page" parameterizedStepValue:"Go to Gauge Get Started Page" > > 
+15:13:22.825 Initializing concepts cache with 0 concepts
+15:13:22.829 Initializing specs cache with 2 specs
+15:13:22.829 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+15:13:22.829 Adding specs from c:\Projects\MarsAir\MarsAir\specs\example.spec
+15:13:22.832 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+15:13:22.832 Found 3 files
+15:13:22.834 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+15:13:22.834 Found 2 files
+15:13:22.900 Initializing steps cache with 7 steps
+15:16:44.108 Api Request Received: messageType:GetStepValueRequest messageId:63610931804096 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+15:16:44.109 Sending API response: messageType:GetStepValueResponse messageId:63610931804096 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+15:16:44.123 Api Request Received: messageType:GetStepValueRequest messageId:63610931804123 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+15:16:44.123 Sending API response: messageType:GetStepValueResponse messageId:63610931804123 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+15:16:44.124 Api Request Received: messageType:GetStepValueRequest messageId:63610931804124 stepValueRequest:<stepText:"Navigate to Gauge homepage <url>" hasInlineTable:false > 
+15:16:44.124 Sending API response: messageType:GetStepValueResponse messageId:63610931804124 stepValueResponse:<stepValue:<stepValue:"Navigate to Gauge homepage {}" parameterizedStepValue:"Navigate to Gauge homepage <url>" parameters:"url" > > 
+15:16:44.124 Api Request Received: messageType:GetStepValueRequest messageId:63610931804124 stepValueRequest:<stepText:"Go to Gauge Get Started Page" hasInlineTable:false > 
+15:16:44.124 Sending API response: messageType:GetStepValueResponse messageId:63610931804124 stepValueResponse:<stepValue:<stepValue:"Go to Gauge Get Started Page" parameterizedStepValue:"Go to Gauge Get Started Page" > > 
+15:16:44.199 Initializing concepts cache with 0 concepts
+15:16:44.203 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+15:16:44.203 Found 3 files
+15:16:44.204 Initializing specs cache with 2 specs
+15:16:44.204 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+15:16:44.204 Adding specs from c:\Projects\MarsAir\MarsAir\specs\example.spec
+15:16:44.207 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+15:16:44.207 Found 2 files
+15:16:44.292 Initializing steps cache with 7 steps
+15:17:31.840 Api Request Received: messageType:GetStepValueRequest messageId:63610931851829 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+15:17:31.841 Sending API response: messageType:GetStepValueResponse messageId:63610931851829 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+15:17:31.853 Api Request Received: messageType:GetStepValueRequest messageId:63610931851853 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+15:17:31.853 Sending API response: messageType:GetStepValueResponse messageId:63610931851853 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+15:17:31.854 Api Request Received: messageType:GetStepValueRequest messageId:63610931851853 stepValueRequest:<stepText:"Navigate to Gauge homepage <url>" hasInlineTable:false > 
+15:17:31.854 Sending API response: messageType:GetStepValueResponse messageId:63610931851853 stepValueResponse:<stepValue:<stepValue:"Navigate to Gauge homepage {}" parameterizedStepValue:"Navigate to Gauge homepage <url>" parameters:"url" > > 
+15:17:31.854 Api Request Received: messageType:GetStepValueRequest messageId:63610931851854 stepValueRequest:<stepText:"Go to Gauge Get Started Page" hasInlineTable:false > 
+15:17:31.854 Sending API response: messageType:GetStepValueResponse messageId:63610931851854 stepValueResponse:<stepValue:<stepValue:"Go to Gauge Get Started Page" parameterizedStepValue:"Go to Gauge Get Started Page" > > 
+15:17:31.918 Initializing concepts cache with 0 concepts
+15:17:31.921 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+15:17:31.921 Found 3 files
+15:17:31.924 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+15:17:31.924 Found 2 files
+15:17:31.925 Initializing specs cache with 2 specs
+15:17:31.925 Adding specs from c:\Projects\MarsAir\MarsAir\specs\example.spec
+15:17:31.925 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+15:17:31.997 Initializing steps cache with 7 steps
+15:18:18.335 Api Request Received: messageType:GetStepValueRequest messageId:63610931898324 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+15:18:18.335 Sending API response: messageType:GetStepValueResponse messageId:63610931898324 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+15:18:18.348 Api Request Received: messageType:GetStepValueRequest messageId:63610931898348 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+15:18:18.348 Sending API response: messageType:GetStepValueResponse messageId:63610931898348 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+15:18:18.349 Api Request Received: messageType:GetStepValueRequest messageId:63610931898348 stepValueRequest:<stepText:"Navigate to Gauge homepage <url>" hasInlineTable:false > 
+15:18:18.349 Sending API response: messageType:GetStepValueResponse messageId:63610931898348 stepValueResponse:<stepValue:<stepValue:"Navigate to Gauge homepage {}" parameterizedStepValue:"Navigate to Gauge homepage <url>" parameters:"url" > > 
+15:18:18.349 Api Request Received: messageType:GetStepValueRequest messageId:63610931898349 stepValueRequest:<stepText:"Go to Gauge Get Started Page" hasInlineTable:false > 
+15:18:18.349 Sending API response: messageType:GetStepValueResponse messageId:63610931898349 stepValueResponse:<stepValue:<stepValue:"Go to Gauge Get Started Page" parameterizedStepValue:"Go to Gauge Get Started Page" > > 
+15:18:18.414 Initializing concepts cache with 0 concepts
+15:18:18.418 Initializing specs cache with 2 specs
+15:18:18.418 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+15:18:18.419 Adding specs from c:\Projects\MarsAir\MarsAir\specs\example.spec
+15:18:18.421 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+15:18:18.421 Found 3 files
+15:18:18.423 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+15:18:18.423 Found 2 files
+15:18:18.490 Initializing steps cache with 7 steps
+15:18:40.995 Api Request Received: messageType:GetStepValueRequest messageId:63610931920984 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+15:18:40.995 Sending API response: messageType:GetStepValueResponse messageId:63610931920984 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+15:18:41.008 Api Request Received: messageType:GetStepValueRequest messageId:63610931921007 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+15:18:41.008 Sending API response: messageType:GetStepValueResponse messageId:63610931921007 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+15:18:41.008 Api Request Received: messageType:GetStepValueRequest messageId:63610931921008 stepValueRequest:<stepText:"Navigate to Gauge homepage <url>" hasInlineTable:false > 
+15:18:41.008 Sending API response: messageType:GetStepValueResponse messageId:63610931921008 stepValueResponse:<stepValue:<stepValue:"Navigate to Gauge homepage {}" parameterizedStepValue:"Navigate to Gauge homepage <url>" parameters:"url" > > 
+15:18:41.008 Api Request Received: messageType:GetStepValueRequest messageId:63610931921008 stepValueRequest:<stepText:"Go to Gauge Get Started Page" hasInlineTable:false > 
+15:18:41.009 Sending API response: messageType:GetStepValueResponse messageId:63610931921008 stepValueResponse:<stepValue:<stepValue:"Go to Gauge Get Started Page" parameterizedStepValue:"Go to Gauge Get Started Page" > > 
+15:18:41.074 Initializing concepts cache with 0 concepts
+15:18:41.077 Initializing specs cache with 2 specs
+15:18:41.077 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+15:18:41.078 Adding specs from c:\Projects\MarsAir\MarsAir\specs\example.spec
+15:18:41.080 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+15:18:41.080 Found 3 files
+15:18:41.082 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+15:18:41.082 Found 2 files
+15:18:41.134 Initializing steps cache with 7 steps
+15:19:59.186 Api Request Received: messageType:GetStepValueRequest messageId:63610931999175 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+15:19:59.186 Sending API response: messageType:GetStepValueResponse messageId:63610931999175 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+15:19:59.199 Api Request Received: messageType:GetStepValueRequest messageId:63610931999199 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+15:19:59.199 Sending API response: messageType:GetStepValueResponse messageId:63610931999199 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+15:19:59.200 Api Request Received: messageType:GetStepValueRequest messageId:63610931999199 stepValueRequest:<stepText:"Navigate to Gauge homepage <url>" hasInlineTable:false > 
+15:19:59.200 Sending API response: messageType:GetStepValueResponse messageId:63610931999199 stepValueResponse:<stepValue:<stepValue:"Navigate to Gauge homepage {}" parameterizedStepValue:"Navigate to Gauge homepage <url>" parameters:"url" > > 
+15:19:59.200 Api Request Received: messageType:GetStepValueRequest messageId:63610931999200 stepValueRequest:<stepText:"Go to Gauge Get Started Page" hasInlineTable:false > 
+15:19:59.200 Sending API response: messageType:GetStepValueResponse messageId:63610931999200 stepValueResponse:<stepValue:<stepValue:"Go to Gauge Get Started Page" parameterizedStepValue:"Go to Gauge Get Started Page" > > 
+15:19:59.265 Initializing concepts cache with 0 concepts
+15:19:59.270 Initializing specs cache with 2 specs
+15:19:59.270 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+15:19:59.270 Adding specs from c:\Projects\MarsAir\MarsAir\specs\example.spec
+15:19:59.272 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+15:19:59.272 Found 3 files
+15:19:59.274 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+15:19:59.274 Found 2 files
+15:19:59.343 Initializing steps cache with 8 steps
