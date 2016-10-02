@@ -9,7 +9,7 @@ Apply valid discount
 -------------------
 
 * A user searches for an available flight
-* The user enters a discount for a promotional code
+* The user enters a discount for a promotional code and is advised the discount is valid
 |discountnumber|discountpercent|
 |1|10|
 |2|20|
@@ -20,5 +20,15 @@ Apply valid discount
 |7|70|
 |8|80|
 |9|90|
-* Press submit
-* Assert user is informed, "Call now on 0800 MARSAIR to book!"
+
+
+Apply invalid discount
+----------------------
+* A user searches for an available flight
+* The user enters an invalid discount for a promotional code and is advised the discount is invalid
+|discountcode|
+|x|
+|£|
+|五|
+||
+

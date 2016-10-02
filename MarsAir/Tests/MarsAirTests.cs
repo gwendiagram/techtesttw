@@ -13,11 +13,12 @@ namespace MarsAir.Tests
     public class Search : Driver
     {
         private static Random random = new Random();
+
         public static string RandomString(int length)
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             return new string(Enumerable.Repeat(chars, length)
-              .Select(s => s[random.Next(s.Length)]).ToArray());
+                .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
         [BeforeSuite]
@@ -70,12 +71,13 @@ namespace MarsAir.Tests
             marsAirHomePage.AssertContentText(availability);
         }
 
-        [Step("The user enters a discount for a promotional code <table>")]
+        [Step("The user enters a discount for a promotional code and is advised the discount is valid <table>")]
         public void DiscountAmount(Table table)
         {
             foreach (var tableRow in table.GetTableRows())
             {
-                var discountString = RandomString(2) + tableRow.GetCell("discountnumber") + "-" + RandomString(3) + "-" + 0 + 0 +
+                var discountString = RandomString(2) + tableRow.GetCell("discountnumber") + "-" + RandomString(3) + "-" +
+                                     0 + 0 +
                                      tableRow.GetCell("discountnumber");
                 Console.WriteLine(discountString);
                 MarsAirHomePage marsAirHomePage = new MarsAirHomePage(_driver);
@@ -89,7 +91,28 @@ namespace MarsAir.Tests
 
         }
 
-        [Step("The user clicks the MarsAir logo")]
+        [Step("The user enters an invalid discount for a promotional code and is advised the discount is invalid <table>")]
+        public void InvalidDiscount(Table table)
+        {
+            foreach (var tableRow in table.GetTableRows())
+            {
+                var discountString = RandomString(2) + tableRow.GetCell("discountcode") + "-" + RandomString(3) + "-" +
+                                     0 + 0 +
+                                     tableRow.GetCell("discountcode");
+                Console.WriteLine(discountString);
+                MarsAirHomePage marsAirHomePage = new MarsAirHomePage(_driver);
+                marsAirHomePage.EnterCode(discountString);
+                marsAirHomePage.Submit();
+                marsAirHomePage.AssertContentText("Sorry, code " + discountString + " is not valid");
+                marsAirHomePage.AssertContentText(discountString);
+                marsAirHomePage.ClickBackLink();
+
+            }
+
+        }
+    
+
+    [Step("The user clicks the MarsAir logo")]
         public void ClickLogo()
         {
             MarsAirHomePage marsAirHomePage = new MarsAirHomePage(_driver);
