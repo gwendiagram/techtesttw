@@ -851,3 +851,113 @@ Success
 12:28:27.296 Scenarios:	5 executed	5 passed	0 failed	0 skipped
 12:28:27.297 
 Total time taken: 26.107s
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+15:13:41.585 # ﻿Discounts
+15:13:41.592 ## Apply valid discount
+15:13:41.601 * A user searches for an available flight
+15:13:41.601 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:13:43.811 * Select "July" from the "departing" field
+15:13:44.141 * Select "December (two years from now)" from the "returning" field
+15:13:44.443 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+15:13:55.599 * Press submit
+15:13:56.072 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+15:13:56.355 # ﻿Flight Search
+15:13:56.356 ## Find available flight
+15:13:56.356 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:13:56.871 * Select "July" from the "departing" field
+15:13:57.093 * Select "December (two years from now)" from the "returning" field
+15:13:57.349 * Press submit
+15:13:57.723 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+15:13:57.892 ## Find unavailable flight
+15:13:57.894 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:13:58.421 * Select "December" from the "departing" field
+15:13:58.687 * Select "December (next year)" from the "returning" field
+15:13:59.028 * Press submit
+15:13:59.464 * Assert user is informed, "Sorry, there are no more seats available."
+15:13:59.631 ## Attempt to find flight where return is less than 1 year from departure
+15:13:59.631 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:14:00.060 * Select "December" from the "departing" field
+15:14:00.413 * Select "July (next year)" from the "returning" field
+15:14:00.677 * Press submit
+15:14:01.046 * Assert user is informed, "Unfortunately, this schedule is not possible. Please try again."
+15:14:01.215 # ﻿Navigation to homepage
+15:14:01.215 ## MarsAir logo returns user to home
+15:14:01.216 * A user searches for an available flight
+15:14:01.216 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:14:01.750 * Select "July" from the "departing" field
+15:14:02.001 * Select "December (two years from now)" from the "returning" field
+15:14:02.239 * The user clicks the MarsAir logo
+15:14:02.621 * "Book a ticket to the red planet now!" is displayed on the page
+15:14:04.537 Plugin [Html Report] with pid [8048] has exited
+15:14:04.638 Specifications:	3 executed	3 passed	0 failed	0 skipped
+15:14:04.638 Scenarios:	5 executed	5 passed	0 failed	0 skipped
+15:14:04.639 
+Total time taken: 27.497s
+15:19:55.651 Plugin csharp 0.7.1 is already installed.
+15:24:22.789 Plugin csharp 0.7.1 is already installed.
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+15:24:33.026 # ﻿Discounts
+15:24:33.034 ## Apply valid discount
+15:24:33.039 * A user searches for an available flight
+15:24:33.039 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:24:37.521 * Select "July" from the "departing" field
+15:24:37.861 * Select "December (two years from now)" from the "returning" field
+15:24:38.101 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+15:24:48.641 * Press submit
+15:24:49.238 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+15:24:49.406 # ﻿Flight Search
+15:24:49.407 ## Find available flight
+15:24:49.410 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:24:49.998 * Select "July" from the "departing" field
+15:24:50.372 * Select "December (two years from now)" from the "returning" field
+15:24:50.691 * Press submit
+15:24:51.088 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+15:24:51.256 ## Find unavailable flight
+15:24:51.256 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:24:51.668 * Select "December" from the "departing" field
+15:24:51.916 * Select "December (next year)" from the "returning" field
+15:24:52.148 * Press submit
+15:24:52.518 * Assert user is informed, "Sorry, there are no more seats available."
+15:24:52.799 ## Attempt to find flight where return is less than 1 year from departure
+15:24:52.800 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:24:53.218 * Select "December" from the "departing" field
+15:24:53.451 * Select "July (next year)" from the "returning" field
+15:24:53.696 * Press submit
+15:24:54.070 * Assert user is informed, "Unfortunately, this schedule is not possible. Please try again."
+15:24:54.237 # ﻿Navigation to homepage
+15:24:54.238 ## MarsAir logo returns user to home
+15:24:54.240 * A user searches for an available flight
+15:24:54.240 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+15:24:54.764 * Select "July" from the "departing" field
+15:24:55.012 * Select "December (two years from now)" from the "returning" field
+15:24:55.267 * The user clicks the MarsAir logo
+15:24:55.631 * "Book a ticket to the red planet now!" is displayed on the page
+15:24:57.651 Plugin [Html Report] with pid [9140] has exited
+15:24:57.751 Specifications:	3 executed	3 passed	0 failed	0 skipped
+15:24:57.751 Scenarios:	5 executed	5 passed	0 failed	0 skipped
+15:24:57.752 
+Total time taken: 29.148s
