@@ -62,18 +62,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Search\Search.cs" />
-    <Compile Include="StepImplementation.cs" />
+    <Compile Include="Discounts\Discounts.cs" />
+    <Compile Include="Pages\MarsAirHomePage.cs" />
+    <Compile Include="Tests\MarsAirTests.cs" />
     <Compile Include="DriverFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebDriverExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Env\default\default.properties" />
     <None Include="manifest.json" />
     <None Include="packages.config" />
-    <None Include="Specs\example.spec" />
+    <None Include="Specs\Concepts.cpt" />
+    <None Include="Specs\Discounts.spec" />
     <None Include="Specs\FlightSearch.spec" />
+    <None Include="Specs\Navigation.spec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

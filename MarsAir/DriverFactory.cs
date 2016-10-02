@@ -21,5 +21,11 @@ namespace MarsAir
                     return new FirefoxDriver();
             }
         }
+
+    }
+    public class Driver
+    {
+        public IWebDriver _driver;
+
     }
 }
