@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentAssertions;
+﻿using FluentAssertions;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 
 namespace MarsAir.Pages
 {
-    public class MarsAirHomePage
+    public class MarsAirHomePage 
     {
         private readonly IWebDriver driver;
         private readonly string url = @"http://gdiagram.marsair.tw/";
 
         public MarsAirHomePage(IWebDriver browser)
         {
-            this.driver = browser;
+            driver = browser;
             PageFactory.InitElements(browser, this);
         }
 
@@ -26,16 +21,16 @@ namespace MarsAir.Pages
 
         public void EnterCode(string textToEnter)
         {
-            this.DiscountTextBox.Clear();
-            this.DiscountTextBox.SendKeys(textToEnter);   
+            DiscountTextBox.Clear();
+            DiscountTextBox.SendKeys(textToEnter);   
         }
 
-        [FindsBy(How = How.CssSelector, Using = "input[type = submit")]
+        [FindsBy(How = How.XPath, Using = "//*[@id=\"content\"]/form/dl[4]/dd/input")]
         public IWebElement SubmitButton { get; set; }
 
         public void Submit()
         {
-            this.SubmitButton.Click();
+            SubmitButton.Click();
         }
 
         [FindsBy(How = How.Id, Using = "content")]
@@ -43,7 +38,7 @@ namespace MarsAir.Pages
 
         public void AssertContentText(string textToAssert)
         {
-            this.ContentText.Text.Should().Contain(textToAssert);
+            ContentText.Text.Should().Contain(textToAssert);
 
         }
 
@@ -52,7 +47,7 @@ namespace MarsAir.Pages
 
         public void ClickBackLink()
         {
-            this.BackLink.Click();
+            BackLink.Click();
         }
 
         [FindsBy(How = How.Id, Using = "departing")]
@@ -78,7 +73,7 @@ namespace MarsAir.Pages
 
         public void ClickMarsAirLogo()
         {
-            this.MarsAirLink.Click();
+            MarsAirLink.Click();
         }
 
 

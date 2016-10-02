@@ -1,7 +1,6 @@
 ﻿
 using System;
 using System.Linq;
-using System.Runtime.Remoting.Channels;
 using FluentAssertions;
 using Gauge.CSharp.Lib;
 using Gauge.CSharp.Lib.Attribute;
@@ -102,6 +101,7 @@ namespace MarsAir.Tests
         {
             MarsAirHomePage marsAirHomePage = new MarsAirHomePage(_driver);
             marsAirHomePage.AssertContentText(salestext);
+            
         }
     }
 }
