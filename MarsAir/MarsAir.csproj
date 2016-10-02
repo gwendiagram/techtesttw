@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Gauge.CSharp.Lib, Version=0.6.1.0, Culture=neutral, PublicKeyToken=3f92af01a0ea350e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Gauge.CSharp.Lib.0.6.1\lib\net45\Gauge.CSharp.Lib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -39,11 +43,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Gauge.CSharp.Lib, Version=0.5.3, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath Condition="Exists('packages\Gauge.CSharp.Lib.0.5.3.0\lib\net45\Gauge.CSharp.Lib.dll')">packages\Gauge.CSharp.Lib.0.5.3.0\lib\net45\Gauge.CSharp.Lib.dll</HintPath>
-      <HintPath Condition="Exists('..\packages\Gauge.CSharp.Lib.0.5.3.0\lib\net45\Gauge.CSharp.Lib.dll')">..\packages\Gauge.CSharp.Lib.0.5.3.0\lib\net45\Gauge.CSharp.Lib.dll</HintPath>
-    </Reference>
     <Reference Include="FluentAssertions">
       <HintPath Condition="Exists('packages\FluentAssertions.3.5.0\lib\net45\FluentAssertions.dll')">packages\FluentAssertions.3.5.0\lib\net45\FluentAssertions.dll</HintPath>
       <HintPath Condition="Exists('..\packages\FluentAssertions.3.5.0\lib\net45\FluentAssertions.dll')">..\packages\FluentAssertions.3.5.0\lib\net45\FluentAssertions.dll</HintPath>
