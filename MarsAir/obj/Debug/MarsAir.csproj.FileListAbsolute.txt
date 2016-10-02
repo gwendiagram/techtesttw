@@ -14,3 +14,5 @@ C:\Projects\MarsAir\MarsAir\obj\Debug\MarsAir.pdb
 C:\Projects\MarsAir\MarsAir\obj\Debug\MarsAir.csprojResolveAssemblyReference.cache
 C:\Projects\MarsAir\MarsAir\bin\Debug\WebDriver.Support.dll
 C:\Projects\MarsAir\MarsAir\bin\Debug\WebDriver.Support.xml
+C:\Projects\MarsAir\MarsAir\bin\Debug\phantomjs.exe
+C:\Projects\MarsAir\MarsAir\bin\Debug\phantomjs-license.txt

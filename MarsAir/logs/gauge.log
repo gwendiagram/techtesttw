@@ -961,3 +961,798 @@ Success
 15:24:57.751 Scenarios:	5 executed	5 passed	0 failed	0 skipped
 15:24:57.752 
 Total time taken: 29.148s
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+16:47:40.976 # ﻿Discounts
+16:47:40.984 ## Apply valid discount
+16:47:40.988 * A user searches for an available flight
+16:47:40.988 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:47:42.741 * Select "July" from the "departing" field
+16:47:42.878 * Select "December (two years from now)" from the "returning" field
+16:47:42.997 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+16:47:44.018 Failed Step: The user enters a discount for a promotional code
+16:47:44.019 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9007"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/8d1f72e0-88b7-11e6-9cbf-914cf4eaeb73/element"}}
+16:47:44.020 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 84
+16:47:44.035 # ﻿Flight Search
+16:47:44.035 ## Find available flight
+16:47:44.036 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:47:44.258 * Select "July" from the "departing" field
+16:47:44.360 * Select "December (two years from now)" from the "returning" field
+16:47:44.463 * Press submit
+16:47:45.084 Failed Step: Press submit
+16:47:45.084 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9007"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/8d1f72e0-88b7-11e6-9cbf-914cf4eaeb73/element"}}
+16:47:45.085 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 63
+16:47:45.090 ## Find unavailable flight
+16:47:45.091 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:47:45.420 * Select "December" from the "departing" field
+16:47:45.520 * Select "December (next year)" from the "returning" field
+16:47:45.625 * Press submit
+16:47:46.197 Failed Step: Press submit
+16:47:46.198 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9007"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/8d1f72e0-88b7-11e6-9cbf-914cf4eaeb73/element"}}
+16:47:46.199 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 63
+16:47:46.203 ## Attempt to find flight where return is less than 1 year from departure
+16:47:46.204 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:47:46.426 * Select "December" from the "departing" field
+16:47:46.526 * Select "July (next year)" from the "returning" field
+16:47:46.626 * Press submit
+16:47:47.216 Failed Step: Press submit
+16:47:47.217 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9007"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/8d1f72e0-88b7-11e6-9cbf-914cf4eaeb73/element"}}
+16:47:47.218 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 63
+16:47:47.223 # ﻿Navigation to homepage
+16:47:47.225 ## MarsAir logo returns user to home
+16:47:47.228 * A user searches for an available flight
+16:47:47.228 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+16:47:53.876 # ﻿Discounts
+16:47:53.885 ## Apply valid discount
+16:47:53.890 * A user searches for an available flight
+16:47:53.890 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:47:55.072 * Select "July" from the "departing" field
+16:47:55.205 * Select "December (two years from now)" from the "returning" field
+16:47:55.328 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+16:47:56.135 Failed Step: The user enters a discount for a promotional code
+16:47:56.136 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9123"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/94cffc30-88b7-11e6-8f5a-5f2e37b4b5bf/element"}}
+16:47:56.137 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 84
+16:47:56.148 # ﻿Flight Search
+16:47:56.149 ## Find available flight
+16:47:56.150 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:47:56.369 * Select "July" from the "departing" field
+16:47:56.468 * Select "December (two years from now)" from the "returning" field
+16:47:56.576 * Press submit
+16:47:57.275 Failed Step: Press submit
+16:47:57.276 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9123"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/94cffc30-88b7-11e6-8f5a-5f2e37b4b5bf/element"}}
+16:47:57.277 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 63
+16:47:57.280 ## Find unavailable flight
+16:47:57.280 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:47:57.501 * Select "December" from the "departing" field
+16:47:57.605 * Select "December (next year)" from the "returning" field
+16:47:57.710 * Press submit
+16:47:58.195 Failed Step: Press submit
+16:47:58.196 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9123"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/94cffc30-88b7-11e6-8f5a-5f2e37b4b5bf/element"}}
+16:47:58.197 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 63
+16:47:58.199 ## Attempt to find flight where return is less than 1 year from departure
+16:47:58.200 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:47:58.417 * Select "December" from the "departing" field
+16:47:58.514 * Select "July (next year)" from the "returning" field
+16:47:58.616 * Press submit
+16:47:59.303 Failed Step: Press submit
+16:47:59.304 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9123"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/94cffc30-88b7-11e6-8f5a-5f2e37b4b5bf/element"}}
+16:47:59.305 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 63
+16:47:59.311 # ﻿Navigation to homepage
+16:47:59.316 ## MarsAir logo returns user to home
+16:47:59.317 * A user searches for an available flight
+16:47:59.317 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:47:59.534 * Select "July" from the "departing" field
+16:47:59.634 * Select "December (two years from now)" from the "returning" field
+16:47:59.734 * The user clicks the MarsAir logo
+16:47:59.991 * "Book a ticket to the red planet now!" is displayed on the page
+16:48:00.501 Plugin [Html Report] with pid [7468] has exited
+16:48:00.602 Specifications:	3 executed	1 passed	2 failed	0 skipped
+16:48:00.602 Scenarios:	5 executed	1 passed	4 failed	0 skipped
+16:48:00.603 
+Total time taken: 8.365s
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+16:48:31.505 # ﻿Discounts
+16:48:31.512 ## Apply valid discount
+16:48:31.516 * A user searches for an available flight
+16:48:31.517 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:48:32.713 * Select "July" from the "departing" field
+16:48:32.842 * Select "December (two years from now)" from the "returning" field
+16:48:32.961 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+16:48:33.757 Failed Step: The user enters a discount for a promotional code
+16:48:33.757 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9267"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/ab3e2c30-88b7-11e6-a193-ed636fb42a1d/element"}}
+16:48:33.759 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 84
+16:48:33.770 # ﻿Flight Search
+16:48:33.771 ## Find available flight
+16:48:33.771 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:48:33.993 * Select "July" from the "departing" field
+16:48:34.090 * Select "December (two years from now)" from the "returning" field
+16:48:34.193 * Press submit
+16:48:34.938 Failed Step: Press submit
+16:48:34.940 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9267"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/ab3e2c30-88b7-11e6-a193-ed636fb42a1d/element"}}
+16:48:34.941 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 63
+16:48:34.943 ## Find unavailable flight
+16:48:34.944 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:48:35.164 * Select "December" from the "departing" field
+16:48:35.270 * Select "December (next year)" from the "returning" field
+16:48:35.368 * Press submit
+16:48:36.156 Failed Step: Press submit
+16:48:36.157 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9267"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/ab3e2c30-88b7-11e6-a193-ed636fb42a1d/element"}}
+16:48:36.157 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 63
+16:48:36.160 ## Attempt to find flight where return is less than 1 year from departure
+16:48:36.160 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:48:36.381 * Select "December" from the "departing" field
+16:48:36.477 * Select "July (next year)" from the "returning" field
+16:48:36.576 * Press submit
+16:48:37.297 Failed Step: Press submit
+16:48:37.298 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9267"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/ab3e2c30-88b7-11e6-a193-ed636fb42a1d/element"}}
+16:48:37.299 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 63
+16:48:37.304 # ﻿Navigation to homepage
+16:48:37.305 ## MarsAir logo returns user to home
+16:48:37.309 * A user searches for an available flight
+16:48:37.309 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:48:37.527 * Select "July" from the "departing" field
+16:48:37.627 * Select "December (two years from now)" from the "returning" field
+16:48:37.730 * The user clicks the MarsAir logo
+16:48:37.984 * "Book a ticket to the red planet now!" is displayed on the page
+16:48:38.489 Plugin [Html Report] with pid [1740] has exited
+16:48:38.589 Specifications:	3 executed	1 passed	2 failed	0 skipped
+16:48:38.589 Scenarios:	5 executed	1 passed	4 failed	0 skipped
+16:48:38.590 
+Total time taken: 8.677s
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+17:21:01.503 # ﻿Discounts
+17:21:01.510 ## Apply valid discount
+17:21:01.514 * A user searches for an available flight
+17:21:01.514 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:21:03.246 * Select "July" from the "departing" field
+17:21:03.375 * Select "December (two years from now)" from the "returning" field
+17:21:03.487 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+17:21:07.033 Failed Step: The user enters a discount for a promotional code
+17:21:07.035 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9617"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/3587f2f0-88bc-11e6-b7e5-0f9bda65cd00/element"}}
+17:21:07.036 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 85
+17:21:07.046 # ﻿Flight Search
+17:21:07.047 ## Find available flight
+17:21:07.048 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:21:07.273 * Select "July" from the "departing" field
+17:21:07.374 * Select "December (two years from now)" from the "returning" field
+17:21:07.474 * Press submit
+17:21:10.759 Failed Step: Press submit
+17:21:10.761 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9617"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/3587f2f0-88bc-11e6-b7e5-0f9bda65cd00/element"}}
+17:21:10.763 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 64
+17:21:10.765 ## Find unavailable flight
+17:21:10.765 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:21:11.086 * Select "December" from the "departing" field
+17:21:11.183 * Select "December (next year)" from the "returning" field
+17:21:11.282 * Press submit
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+17:22:21.675 # ﻿Discounts
+17:22:21.683 ## Apply valid discount
+17:22:21.688 * A user searches for an available flight
+17:22:21.688 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:22:22.899 * Select "July" from the "departing" field
+17:22:23.030 * Select "December (two years from now)" from the "returning" field
+17:22:23.141 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+17:22:26.799 Failed Step: The user enters a discount for a promotional code
+17:22:26.800 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9715"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/655160c0-88bc-11e6-ae5e-e78eb51b65e2/element"}}
+17:22:26.800 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Pages.MarsAirHomePage.Submit() in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 39
+   at MarsAir.Tests.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 85
+17:22:26.810 # ﻿Flight Search
+17:22:26.811 ## Find available flight
+17:22:26.813 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:22:27.029 * Select "July" from the "departing" field
+17:22:27.128 * Select "December (two years from now)" from the "returning" field
+17:22:27.228 * Press submit
+17:22:30.796 Failed Step: Press submit
+17:22:30.797 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:9715"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = submit\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/655160c0-88bc-11e6-ae5e-e78eb51b65e2/element"}}
+17:22:30.798 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Pages.MarsAirHomePage.Submit() in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 39
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 64
+17:22:30.801 ## Find unavailable flight
+17:22:30.801 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:22:31.025 * Select "December" from the "departing" field
+17:22:31.124 * Select "December (next year)" from the "returning" field
+17:22:31.219 * Press submit
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+17:29:04.638 # ﻿Discounts
+17:29:04.646 ## Apply valid discount
+17:29:04.650 * A user searches for an available flight
+17:29:04.650 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:29:05.848 * Select "July" from the "departing" field
+17:29:05.977 * Select "December (two years from now)" from the "returning" field
+17:29:06.090 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+17:29:11.875 Failed Step: The user enters a discount for a promotional code
+17:29:11.875 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"58","Content-Type":"application/json;charset=utf-8","Host":"localhost:9851"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = \\\"submit\\\"\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/5580a6f0-88bd-11e6-ab39-3fac217426a5/element"}}
+17:29:11.877 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Pages.MarsAirHomePage.Submit() in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 39
+   at MarsAir.Tests.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 85
+17:29:11.887 # ﻿Flight Search
+17:29:11.889 ## Find available flight
+17:29:11.889 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:29:12.112 * Select "July" from the "departing" field
+17:29:12.208 * Select "December (two years from now)" from the "returning" field
+17:29:12.308 * Press submit
+17:29:17.674 Failed Step: Press submit
+17:29:17.676 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"58","Content-Type":"application/json;charset=utf-8","Host":"localhost:9851"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = \\\"submit\\\"\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/5580a6f0-88bd-11e6-ab39-3fac217426a5/element"}}
+17:29:17.677 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Pages.MarsAirHomePage.Submit() in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 39
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 64
+17:29:17.679 ## Find unavailable flight
+17:29:17.679 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:29:18.000 * Select "December" from the "departing" field
+17:29:18.096 * Select "December (next year)" from the "returning" field
+17:29:18.195 * Press submit
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+17:31:05.829 # ﻿Discounts
+17:31:05.836 ## Apply valid discount
+17:31:05.841 * A user searches for an available flight
+17:31:05.841 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:31:07.024 * Select "July" from the "departing" field
+17:31:07.153 * Select "December (two years from now)" from the "returning" field
+17:31:07.267 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+17:31:12.978 Failed Step: The user enters a discount for a promotional code
+17:31:12.978 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"56","Content-Type":"application/json;charset=utf-8","Host":"localhost:9956"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type = 'submit'\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/9dbcee60-88bd-11e6-a604-a36b2879dfb5/element"}}
+17:31:12.980 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Pages.MarsAirHomePage.Submit() in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 39
+   at MarsAir.Tests.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 85
+17:31:12.991 # ﻿Flight Search
+17:31:12.991 ## Find available flight
+17:31:12.991 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:31:13.210 * Select "July" from the "departing" field
+17:31:13.308 * Select "December (two years from now)" from the "returning" field
+17:31:13.408 * Press submit
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+17:34:50.553 # ﻿Discounts
+17:34:50.562 ## Apply valid discount
+17:34:50.566 * A user searches for an available flight
+17:34:50.566 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:34:51.650 * Select "July" from the "departing" field
+17:34:51.778 * Select "December (two years from now)" from the "returning" field
+17:34:51.890 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+17:34:57.444 Failed Step: The user enters a discount for a promotional code
+17:34:57.444 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:10042"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type='submit'\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/23aef090-88be-11e6-bc32-69b0728b7e8c/element"}}
+17:34:57.445 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Pages.MarsAirHomePage.Submit() in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 39
+   at MarsAir.Tests.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 85
+17:34:57.457 # ﻿Flight Search
+17:34:57.457 ## Find available flight
+17:34:57.457 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:34:57.679 * Select "July" from the "departing" field
+17:34:57.784 * Select "December (two years from now)" from the "returning" field
+17:34:57.899 * Press submit
+17:35:03.540 Failed Step: Press submit
+17:35:03.542 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:10042"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type='submit'\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/23aef090-88be-11e6-bc32-69b0728b7e8c/element"}}
+17:35:03.543 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Pages.MarsAirHomePage.Submit() in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 39
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 64
+17:35:03.544 ## Find unavailable flight
+17:35:03.546 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:35:03.767 * Select "December" from the "departing" field
+17:35:03.870 * Select "December (next year)" from the "returning" field
+17:35:03.976 * Press submit
+17:35:09.504 Failed Step: Press submit
+17:35:09.505 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:10042"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type='submit'\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/23aef090-88be-11e6-bc32-69b0728b7e8c/element"}}
+17:35:09.506 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Pages.MarsAirHomePage.Submit() in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 39
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 64
+17:35:09.508 ## Attempt to find flight where return is less than 1 year from departure
+17:35:09.510 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:35:09.832 * Select "December" from the "departing" field
+17:35:09.933 * Select "July (next year)" from the "returning" field
+17:35:10.034 * Press submit
+17:35:15.517 Failed Step: Press submit
+17:35:15.518 Error Message: {"errorMessage":"SyntaxError: DOM Exception 12","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"54","Content-Type":"application/json;charset=utf-8","Host":"localhost:10042"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"input[type='submit'\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/23aef090-88be-11e6-bc32-69b0728b7e8c/element"}}
+17:35:15.520 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass1e.<CssSelector>b__1c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at MarsAir.Pages.MarsAirHomePage.Submit() in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 39
+   at MarsAir.Tests.Search.PressValue() in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 64
+17:35:15.525 # ﻿Navigation to homepage
+17:35:15.526 ## MarsAir logo returns user to home
+17:35:15.529 * A user searches for an available flight
+17:35:15.529 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:35:15.750 * Select "July" from the "departing" field
+17:35:15.858 * Select "December (two years from now)" from the "returning" field
+17:35:15.957 * The user clicks the MarsAir logo
+17:35:16.215 * "Book a ticket to the red planet now!" is displayed on the page
+17:35:16.718 Plugin [Html Report] with pid [5880] has exited
+17:35:16.818 Specifications:	3 executed	1 passed	2 failed	0 skipped
+17:35:16.818 Scenarios:	5 executed	1 passed	4 failed	0 skipped
+17:35:16.819 
+Total time taken: 27.838s
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+17:46:39.855 # ﻿Discounts
+17:46:39.863 ## Apply valid discount
+17:46:39.867 * A user searches for an available flight
+17:46:39.867 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:46:41.033 * Select "July" from the "departing" field
+17:46:41.161 * Select "December (two years from now)" from the "returning" field
+17:46:41.269 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+17:46:46.949 * Press submit
+17:46:47.303 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+17:46:47.337 # ﻿Flight Search
+17:46:47.340 ## Find available flight
+17:46:47.340 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:46:47.660 * Select "July" from the "departing" field
+17:46:47.757 * Select "December (two years from now)" from the "returning" field
+17:46:47.860 * Press submit
+17:46:48.211 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+17:46:48.240 ## Find unavailable flight
+17:46:48.240 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:46:48.465 * Select "December" from the "departing" field
+17:46:48.564 * Select "December (next year)" from the "returning" field
+17:46:48.664 * Press submit
+17:46:49.015 * Assert user is informed, "Sorry, there are no more seats available."
+17:46:49.043 ## Attempt to find flight where return is less than 1 year from departure
+17:46:49.044 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:46:49.267 * Select "December" from the "departing" field
+17:46:49.365 * Select "July (next year)" from the "returning" field
+17:46:49.463 * Press submit
+17:46:49.823 * Assert user is informed, "Unfortunately, this schedule is not possible. Please try again."
+17:46:49.854 # ﻿Navigation to homepage
+17:46:49.855 ## MarsAir logo returns user to home
+17:46:49.856 * A user searches for an available flight
+17:46:49.856 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:46:50.081 * Select "July" from the "departing" field
+17:46:50.179 * Select "December (two years from now)" from the "returning" field
+17:46:50.280 * The user clicks the MarsAir logo
+17:46:50.638 * "Book a ticket to the red planet now!" is displayed on the page
+17:46:51.023 Plugin [Html Report] with pid [4088] has exited
+17:46:51.125 Specifications:	3 executed	3 passed	0 failed	0 skipped
+17:46:51.125 Scenarios:	5 executed	5 passed	0 failed	0 skipped
+17:46:51.125 
+Total time taken: 12.949s
+Building Project: c:\Projects\MarsAir\MarsAir\MarsAir.sln
+Success
+17:48:21.508 # ﻿Discounts
+17:48:21.515 ## Apply valid discount
+17:48:21.520 * A user searches for an available flight
+17:48:21.520 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:48:22.597 * Select "July" from the "departing" field
+17:48:22.731 * Select "December (two years from now)" from the "returning" field
+17:48:22.851 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+17:48:28.092 * Press submit
+17:48:28.342 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+17:48:28.374 # ﻿Flight Search
+17:48:28.375 ## Find available flight
+17:48:28.377 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:48:28.599 * Select "July" from the "departing" field
+17:48:28.700 * Select "December (two years from now)" from the "returning" field
+17:48:28.801 * Press submit
+17:48:29.052 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+17:48:29.084 ## Find unavailable flight
+17:48:29.085 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:48:29.303 * Select "December" from the "departing" field
+17:48:29.410 * Select "December (next year)" from the "returning" field
+17:48:29.514 * Press submit
+17:48:29.765 * Assert user is informed, "Sorry, there are no more seats available."
+17:48:29.793 ## Attempt to find flight where return is less than 1 year from departure
+17:48:29.795 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:48:30.013 * Select "December" from the "departing" field
+17:48:30.129 * Select "July (next year)" from the "returning" field
+17:48:30.229 * Press submit
+17:48:30.579 * Assert user is informed, "Unfortunately, this schedule is not possible. Please try again."
+17:48:30.609 # ﻿Navigation to homepage
+17:48:30.610 ## MarsAir logo returns user to home
+17:48:30.610 * A user searches for an available flight
+17:48:30.610 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:48:30.932 * Select "July" from the "departing" field
+17:48:31.033 * Select "December (two years from now)" from the "returning" field
+17:48:31.134 * The user clicks the MarsAir logo
+17:48:31.393 * "Book a ticket to the red planet now!" is displayed on the page
+17:48:31.785 Plugin [Html Report] with pid [10196] has exited
+17:48:31.887 Specifications:	3 executed	3 passed	0 failed	0 skipped
+17:48:31.887 Scenarios:	5 executed	5 passed	0 failed	0 skipped
+17:48:31.887 
+Total time taken: 12.049s

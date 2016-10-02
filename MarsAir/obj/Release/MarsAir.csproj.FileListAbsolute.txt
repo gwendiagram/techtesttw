@@ -14,3 +14,5 @@ c:\Projects\MarsAir\MarsAir\obj\Release\MarsAir.dll
 c:\Projects\MarsAir\MarsAir\obj\Release\MarsAir.pdb
 c:\Projects\MarsAir\MarsAir\gauge-bin\WebDriver.Support.dll
 c:\Projects\MarsAir\MarsAir\gauge-bin\WebDriver.Support.xml
+c:\Projects\MarsAir\MarsAir\gauge-bin\phantomjs.exe
+c:\Projects\MarsAir\MarsAir\gauge-bin\phantomjs-license.txt
