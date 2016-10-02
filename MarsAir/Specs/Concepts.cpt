@@ -1,0 +1,14 @@
+﻿# Search Concepts
+
+# A user searches for an available flight
+
+* Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+* Select "July" from the "departing" field
+* Select "December (two years from now)" from the "returning" field
+
+# A user searches for an unavailable flight
+
+* Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+* Select "December" from the "departing" field
+* Select "December (next year)" from the "returning" field
+

@@ -268,3 +268,515 @@ Total time taken: 11.991s
 16:30:31.405 Scenarios:	3 executed	3 passed	0 failed	0 skipped
 16:30:31.407 
 Total time taken: 12.874s
+16:56:36.415 # ﻿Discounts
+16:56:36.422 ## Apply valid discount
+16:56:36.427 * A user searches for an available flight
+16:56:36.427 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:56:38.150 * Select "July" from the "departing" field
+16:56:38.424 * Select "December (two years from now)" from the "returning" field
+16:56:38.636 * The user enters a "1" for discount of that number times 10
+16:56:38.643 * Press "submit"
+16:56:39.003 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+16:56:40.443 Plugin [Html Report] with pid [7444] has exited
+16:56:40.544 Specifications:	1 executed	1 passed	0 failed	0 skipped
+16:56:40.546 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+16:56:40.549 
+Total time taken: 9.049s
+16:56:55.964 # ﻿Discounts
+16:56:55.971 ## Apply valid discount
+16:56:55.976 * A user searches for an available flight
+16:56:55.976 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:56:57.725 * Select "July" from the "departing" field
+16:56:57.995 * Select "December (two years from now)" from the "returning" field
+16:56:58.207 * The user enters a "1" for discount of that number times 10
+16:56:58.215 * Press "submit"
+16:56:58.571 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+16:57:00.005 Plugin [Html Report] with pid [6048] has exited
+16:57:00.105 Specifications:	1 executed	1 passed	0 failed	0 skipped
+16:57:00.108 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+16:57:00.111 
+Total time taken: 9.02s
+16:59:32.045 # ﻿Discounts
+16:59:32.052 ## Apply valid discount
+16:59:32.057 * A user searches for an available flight
+16:59:32.057 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+16:59:33.848 * Select "July" from the "departing" field
+16:59:34.130 * Select "December (two years from now)" from the "returning" field
+16:59:34.340 * The user enters a "1" for discount of that number times 10
+16:59:34.499 Failed Step: The user enters a "1" for discount of that number times 10
+16:59:34.501 Error Message: Object reference not set to an instance of an object.
+16:59:34.502 Stacktrace: 
+   at MarsAir.Discounts.Discounts.DiscountAmount(Int32 discount) in c:\Projects\MarsAir\MarsAir\Discounts\Discounts.cs:line 27
+16:59:35.685 Plugin [Html Report] with pid [5128] has exited
+16:59:35.786 Specifications:	1 executed	0 passed	1 failed	0 skipped
+16:59:35.788 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+16:59:35.792 
+Total time taken: 8.561s
+17:01:03.278 # ﻿Discounts
+17:01:03.288 ## Apply valid discount
+17:01:03.294 * A user searches for an available flight
+17:01:03.294 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:01:04.808 * Select "July" from the "departing" field
+17:01:05.087 * Select "December (two years from now)" from the "returning" field
+17:01:05.285 * The user enters a "1" for discount of that number times 10
+17:01:05.431 Failed Step: The user enters a "1" for discount of that number times 10
+17:01:05.432 Error Message: Object reference not set to an instance of an object.
+17:01:05.433 Stacktrace: 
+   at MarsAir.Discounts.Discounts.DiscountAmount(Int32 discount) in c:\Projects\MarsAir\MarsAir\Discounts\Discounts.cs:line 27
+17:01:06.610 Plugin [Html Report] with pid [7208] has exited
+17:01:06.711 Specifications:	1 executed	0 passed	1 failed	0 skipped
+17:01:06.713 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+17:01:06.716 
+Total time taken: 8.252s
+17:14:24.138 # ﻿Flight Search
+17:14:24.145 ## Find available flight
+17:14:24.150 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:14:30.927 * Select "July" from the "departing" field
+17:14:31.197 * Select "December (two years from now)" from the "returning" field
+17:14:31.404 * Press "submit"
+17:14:31.761 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+17:14:31.924 ## Find unavailable flight
+17:14:31.926 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:14:32.432 * Select "December" from the "departing" field
+17:14:32.610 * Select "December (next year)" from the "returning" field
+17:14:32.788 * Press "submit"
+17:14:33.222 * Assert user is informed, "Sorry, there are no more seats available."
+17:14:33.492 ## Attempt to find flight where return is less than 1 year from departure
+17:14:33.496 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:14:33.973 * Select "December" from the "departing" field
+17:14:34.150 * Select "July (next year)" from the "returning" field
+17:14:34.324 * Press "submit"
+17:14:34.664 * Assert user is informed, "Unfortunately, this schedule is not possible. Please try again."
+17:14:40.106 Plugin [Html Report] with pid [8388] has exited
+17:14:40.206 Specifications:	1 executed	1 passed	0 failed	0 skipped
+17:14:40.209 Scenarios:	3 executed	3 passed	0 failed	0 skipped
+17:14:40.212 
+Total time taken: 30.241s
+17:15:55.467 # ﻿Flight Search
+17:15:55.475 ## Find available flight
+17:15:55.480 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:15:55.639 Failed Step: Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:15:55.641 Error Message: Object reference not set to an instance of an object.
+17:15:55.643 Stacktrace: 
+   at MarsAir.Search.Search.NavigateTo(String url) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 17
+17:15:55.903 ## Find unavailable flight
+17:15:55.906 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:15:55.965 Failed Step: Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:15:55.966 Error Message: Object reference not set to an instance of an object.
+17:15:55.969 Stacktrace: 
+   at MarsAir.Search.Search.NavigateTo(String url) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 17
+17:15:56.223 ## Attempt to find flight where return is less than 1 year from departure
+17:15:56.230 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:15:56.288 Failed Step: Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:15:56.290 Error Message: Object reference not set to an instance of an object.
+17:15:56.291 Stacktrace: 
+   at MarsAir.Search.Search.NavigateTo(String url) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 17
+17:16:01.726 Plugin [Html Report] with pid [8964] has exited
+17:16:01.826 Specifications:	1 executed	0 passed	1 failed	0 skipped
+17:16:01.829 Scenarios:	3 executed	0 passed	3 failed	0 skipped
+17:16:01.832 
+Total time taken: 15.849s
+17:16:53.546 # ﻿Flight Search
+17:16:53.555 ## Find available flight
+17:16:53.562 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:16:55.181 * Select "July" from the "departing" field
+17:16:55.476 * Select "December (two years from now)" from the "returning" field
+17:16:55.727 * Press "submit"
+17:16:56.094 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+17:16:56.377 ## Find unavailable flight
+17:16:56.379 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:16:56.890 * Select "December" from the "departing" field
+17:16:57.072 * Select "December (next year)" from the "returning" field
+17:16:57.257 * Press "submit"
+17:16:57.608 * Assert user is informed, "Sorry, there are no more seats available."
+17:16:57.880 ## Attempt to find flight where return is less than 1 year from departure
+17:16:57.883 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:16:58.281 * Select "December" from the "departing" field
+17:16:58.465 * Select "July (next year)" from the "returning" field
+17:16:58.655 * Press "submit"
+17:16:59.009 * Assert user is informed, "Unfortunately, this schedule is not possible. Please try again."
+17:17:00.945 Plugin [Html Report] with pid [3104] has exited
+17:17:01.045 Specifications:	1 executed	1 passed	0 failed	0 skipped
+17:17:01.047 Scenarios:	3 executed	3 passed	0 failed	0 skipped
+17:17:01.050 
+Total time taken: 12.582s
+17:18:35.434 # ﻿Discounts
+17:18:35.442 ## Apply valid discount
+17:18:35.447 * A user searches for an available flight
+17:18:35.447 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:18:37.181 * Select "July" from the "departing" field
+17:18:37.456 * Select "December (two years from now)" from the "returning" field
+17:18:37.662 * The user enters a "1" for discount of that number times 10
+17:18:37.805 Failed Step: The user enters a "1" for discount of that number times 10
+17:18:37.808 Error Message: Object reference not set to an instance of an object.
+17:18:37.809 Stacktrace: 
+   at MarsAir.Discounts.Discounts.DiscountAmount(Int32 discount) in c:\Projects\MarsAir\MarsAir\Discounts\Discounts.cs:line 26
+17:18:38.990 Plugin [Html Report] with pid [7568] has exited
+17:18:39.090 Specifications:	1 executed	0 passed	1 failed	0 skipped
+17:18:39.093 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+17:18:39.096 
+Total time taken: 8.493s
+17:19:37.839 # ﻿Discounts
+17:19:37.847 ## Apply valid discount
+17:19:37.852 * A user searches for an available flight
+17:19:37.852 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:19:39.511 * Select "July" from the "departing" field
+17:19:39.789 * Select "December (two years from now)" from the "returning" field
+17:19:39.997 * The user enters a "1" for discount of that number times 10
+17:19:40.145 Failed Step: The user enters a "1" for discount of that number times 10
+17:19:40.147 Error Message: Object reference not set to an instance of an object.
+17:19:40.148 Stacktrace: 
+   at MarsAir.Discounts.Discounts.DiscountAmount(Int32 discount) in c:\Projects\MarsAir\MarsAir\Discounts\Discounts.cs:line 26
+17:19:41.329 Plugin [Html Report] with pid [6048] has exited
+17:19:41.430 Specifications:	1 executed	0 passed	1 failed	0 skipped
+17:19:41.433 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+17:19:41.436 
+Total time taken: 8.406s
+17:21:09.444 # ﻿Discounts
+17:21:09.452 ## Apply valid discount
+17:21:09.457 * A user searches for an available flight
+17:21:09.457 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:21:11.148 * Select "July" from the "departing" field
+17:21:11.427 * Select "December (two years from now)" from the "returning" field
+17:21:11.628 * The user enters a "1" for discount of that number times 10
+17:21:11.779 Failed Step: The user enters a "1" for discount of that number times 10
+17:21:11.780 Error Message: Object reference not set to an instance of an object.
+17:21:11.782 Stacktrace: 
+   at MarsAir.Discounts.Discounts.DiscountAmount(Int32 discount) in c:\Projects\MarsAir\MarsAir\Discounts\Discounts.cs:line 26
+17:21:12.965 Plugin [Html Report] with pid [8888] has exited
+17:21:13.065 Specifications:	1 executed	0 passed	1 failed	0 skipped
+17:21:13.068 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+17:21:13.070 
+Total time taken: 8.453s
+17:23:41.927 # ﻿Discounts
+17:23:41.934 ## Apply valid discount
+17:23:41.939 * A user searches for an available flight
+17:23:41.939 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:23:43.637 * Select "July" from the "departing" field
+17:23:43.907 * Select "December (two years from now)" from the "returning" field
+17:23:44.105 * The user enters a "1" for discount of that number times 10
+17:23:44.257 Failed Step: The user enters a "1" for discount of that number times 10
+17:23:44.261 Error Message: Object reference not set to an instance of an object.
+17:23:44.262 Stacktrace: 
+   at MarsAir.Discounts.Discounts.DiscountAmount(Int32 discount) in c:\Projects\MarsAir\MarsAir\Discounts\Discounts.cs:line 26
+17:23:45.443 Plugin [Html Report] with pid [9856] has exited
+17:23:45.544 Specifications:	1 executed	0 passed	1 failed	0 skipped
+17:23:45.547 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+17:23:45.549 
+Total time taken: 8.427s
+17:24:27.306 # ﻿Discounts
+17:24:27.314 ## Apply valid discount
+17:24:27.319 * A user searches for an available flight
+17:24:27.320 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:24:29.015 * Select "July" from the "departing" field
+17:24:29.294 * Select "December (two years from now)" from the "returning" field
+17:24:29.494 * The user enters a "1" for discount of that number times 10
+17:24:29.636 Failed Step: The user enters a "1" for discount of that number times 10
+17:24:29.638 Error Message: Object reference not set to an instance of an object.
+17:24:29.639 Stacktrace: 
+   at MarsAir.Discounts.Discounts.DiscountAmount(Int32 discount) in c:\Projects\MarsAir\MarsAir\Discounts\Discounts.cs:line 26
+17:24:30.820 Plugin [Html Report] with pid [6572] has exited
+17:24:30.921 Specifications:	1 executed	0 passed	1 failed	0 skipped
+17:24:30.923 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+17:24:30.925 
+Total time taken: 8.469s
+17:28:04.154 # ﻿Discounts
+17:28:04.161 ## Apply valid discount
+17:28:04.166 * A user searches for an available flight
+17:28:04.166 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:28:05.881 * Select "July" from the "departing" field
+17:28:06.153 * Select "December (two years from now)" from the "returning" field
+17:28:06.356 * The user enters a "1" for discount of that number times 10
+17:28:06.509 Failed Step: The user enters a "1" for discount of that number times 10
+17:28:06.510 Error Message: Object reference not set to an instance of an object.
+17:28:06.511 Stacktrace: 
+   at MarsAir.Discounts.Discounts.DiscountAmount(Int32 discount) in c:\Projects\MarsAir\MarsAir\Discounts\Discounts.cs:line 26
+17:28:07.688 Plugin [Html Report] with pid [8392] has exited
+17:28:07.789 Specifications:	1 executed	0 passed	1 failed	0 skipped
+17:28:07.792 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+17:28:07.795 
+Total time taken: 8.467s
+17:29:08.519 # ﻿Discounts
+17:29:08.527 ## Apply valid discount
+17:29:08.531 * A user searches for an available flight
+17:29:08.532 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:29:10.267 * Select "July" from the "departing" field
+17:29:10.550 * Select "December (two years from now)" from the "returning" field
+17:29:10.759 * The user enters a "1" for discount of that number times 10
+17:29:10.911 Failed Step: The user enters a "1" for discount of that number times 10
+17:29:10.913 Error Message: Object reference not set to an instance of an object.
+17:29:10.916 Stacktrace: 
+   at MarsAir.Discounts.Discounts.DiscountAmount(Int32 discount) in c:\Projects\MarsAir\MarsAir\Discounts\Discounts.cs:line 27
+17:29:12.095 Plugin [Html Report] with pid [11108] has exited
+17:29:12.195 Specifications:	1 executed	0 passed	1 failed	0 skipped
+17:29:12.198 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+17:29:12.201 
+Total time taken: 8.51s
+17:30:31.753 # ﻿Discounts
+17:30:31.760 ## Apply valid discount
+17:30:31.766 * A user searches for an available flight
+17:30:31.766 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:30:33.486 * Select "July" from the "departing" field
+17:30:33.784 * Select "December (two years from now)" from the "returning" field
+17:30:33.994 * The user enters a "1" for discount of that number times 10
+17:30:34.012 * Press "submit"
+17:30:34.390 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+17:30:35.836 Plugin [Html Report] with pid [10008] has exited
+17:30:35.936 Specifications:	1 executed	1 passed	0 failed	0 skipped
+17:30:35.939 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+17:30:35.942 
+Total time taken: 9.121s
+17:32:48.469 # ﻿Discounts
+17:32:48.476 ## Apply valid discount
+17:32:48.482 * A user searches for an available flight
+17:32:48.482 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:32:50.002 * Select "July" from the "departing" field
+17:32:50.278 * Select "December (two years from now)" from the "returning" field
+17:32:50.473 * The user enters a "1" for discount of that number times 10
+17:32:50.568 * Press "submit"
+17:32:50.963 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+17:32:52.403 Plugin [Html Report] with pid [8300] has exited
+17:32:52.504 Specifications:	1 executed	1 passed	0 failed	0 skipped
+17:32:52.507 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+17:32:52.509 
+Total time taken: 8.885s
+17:34:56.859 # ﻿Discounts
+17:34:56.867 ## Apply valid discount
+17:34:56.872 * A user searches for an available flight
+17:34:56.872 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+17:34:58.555 * Select "July" from the "departing" field
+17:34:58.841 * Select "December (two years from now)" from the "returning" field
+17:34:59.051 * The user enters a "1" for discount of that number times 10
+17:34:59.142 * Press "submit"
+17:34:59.538 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+17:35:00.985 Plugin [Html Report] with pid [10528] has exited
+17:35:01.085 Specifications:	1 executed	1 passed	0 failed	0 skipped
+17:35:01.088 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+17:35:01.091 
+Total time taken: 9.097s
+18:11:20.573 # ﻿Discounts
+18:11:20.580 ## Apply valid discount
+18:11:20.587 * A user searches for an available flight
+18:11:20.587 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+18:11:22.329 * Select "July" from the "departing" field
+18:11:22.614 * Select "December (two years from now)" from the "returning" field
+18:11:22.830 * The user enters a "discount" for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+18:11:22.836 Failed Step: The user enters a "discount" for a promotional code
+18:11:22.837 Error Message: Argument length mismatch for The user enters a "discount" for a promotional code. Actual Count: 2, Expected Count: 1
+18:11:22.839 Stacktrace: 
+18:11:24.014 Plugin [Html Report] with pid [11940] has exited
+18:11:24.116 Specifications:	1 executed	0 passed	1 failed	0 skipped
+18:11:24.118 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+18:11:24.120 
+Total time taken: 8.542s
+18:12:19.717 # ﻿Discounts
+18:12:19.725 ## Apply valid discount
+18:12:19.730 * A user searches for an available flight
+18:12:19.730 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+18:12:21.387 * Select "July" from the "departing" field
+18:12:21.677 * Select "December (two years from now)" from the "returning" field
+18:12:21.889 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+18:12:22.468 Failed Step: The user enters a discount for a promotional code
+18:12:22.469 Error Message: Expected string "Welcome to MarsAir!\r\nBook a ticket to the red planet now!\r\nDeparting\r\nSelect...\r\nJuly\r\nDecember\r\nJuly (next year)\r\nDecember (next year)\r\nJuly (two years from now)\r\nDecember (two years from now)\r\nReturning\r\nSelect...\r\nJuly\r\nDecember\r\nJuly (next year)\r\nDecember (next year)\r\nJuly (two years from now)\r\nDecember (two years from now)\r\nPromotional Code" to contain "used: 10".
+18:12:22.475 Stacktrace: 
+   at FluentAssertions.Execution.FallbackTestFramework.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\Shared\Execution\FallbackTestFramework.cs:line 21
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Net40\Execution\TestFrameworkProvider.cs:line 42
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\DefaultAssertionStrategy.cs:line 25
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\AssertionScope.cs:line 197
+   at FluentAssertions.Primitives.StringAssertions.Contain(String expected, String because, Object[] reasonArgs) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Primitives\StringAssertions.cs:line 620
+   at MarsAir.Search.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 78
+18:12:23.674 Plugin [Html Report] with pid [2200] has exited
+18:12:23.776 Specifications:	1 executed	0 passed	1 failed	0 skipped
+18:12:23.778 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+18:12:23.781 
+Total time taken: 8.927s
+18:13:09.297 # ﻿Discounts
+18:13:09.304 ## Apply valid discount
+18:13:09.309 * A user searches for an available flight
+18:13:09.309 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+18:13:11.049 * Select "July" from the "departing" field
+18:13:11.351 * Select "December (two years from now)" from the "returning" field
+18:13:11.568 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+18:13:12.043 Failed Step: The user enters a discount for a promotional code
+18:13:12.045 Error Message: Expected string "Welcome to MarsAir!\r\nBook a ticket to the red planet now!\r\nDeparting\r\nSelect...\r\nJuly\r\nDecember\r\nJuly (next year)\r\nDecember (next year)\r\nJuly (two years from now)\r\nDecember (two years from now)\r\nReturning\r\nSelect...\r\nJuly\r\nDecember\r\nJuly (next year)\r\nDecember (next year)\r\nJuly (two years from now)\r\nDecember (two years from now)\r\nPromotional Code" to contain "used: 10".
+18:13:12.049 Stacktrace: 
+   at FluentAssertions.Execution.FallbackTestFramework.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\Shared\Execution\FallbackTestFramework.cs:line 21
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Net40\Execution\TestFrameworkProvider.cs:line 42
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\DefaultAssertionStrategy.cs:line 25
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\AssertionScope.cs:line 197
+   at FluentAssertions.Primitives.StringAssertions.Contain(String expected, String because, Object[] reasonArgs) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Primitives\StringAssertions.cs:line 620
+   at MarsAir.Search.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 78
+18:13:13.242 Plugin [Html Report] with pid [11360] has exited
+18:13:13.343 Specifications:	1 executed	0 passed	1 failed	0 skipped
+18:13:13.345 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+18:13:13.348 
+Total time taken: 8.922s
+18:14:35.174 # ﻿Discounts
+18:14:35.181 ## Apply valid discount
+18:14:35.187 * A user searches for an available flight
+18:14:35.187 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+18:14:36.855 * Select "July" from the "departing" field
+18:14:37.140 * Select "December (two years from now)" from the "returning" field
+18:14:37.349 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+18:14:38.377 Failed Step: The user enters a discount for a promotional code
+18:14:38.379 Error Message: Expected string "Search Results\r\nSeats available!\r\nSorry, code OI-1ADU-001 is not valid\r\nCall now on 0800 MARSAIR to book!\r\nBack" to contain "used: 10".
+18:14:38.381 Stacktrace: 
+   at FluentAssertions.Execution.FallbackTestFramework.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\Shared\Execution\FallbackTestFramework.cs:line 21
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Net40\Execution\TestFrameworkProvider.cs:line 42
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\DefaultAssertionStrategy.cs:line 25
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\AssertionScope.cs:line 197
+   at FluentAssertions.Primitives.StringAssertions.Contain(String expected, String because, Object[] reasonArgs) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Primitives\StringAssertions.cs:line 620
+   at MarsAir.Search.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 80
+18:14:39.578 Plugin [Html Report] with pid [2748] has exited
+18:14:39.678 Specifications:	1 executed	0 passed	1 failed	0 skipped
+18:14:39.681 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+18:14:39.685 
+Total time taken: 9.408s
+18:15:09.070 # ﻿Discounts
+18:15:09.078 ## Apply valid discount
+18:15:09.083 * A user searches for an available flight
+18:15:09.083 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+18:15:10.768 * Select "July" from the "departing" field
+18:15:11.051 * Select "December (two years from now)" from the "returning" field
+18:15:11.261 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+18:15:12.271 Failed Step: The user enters a discount for a promotional code
+18:15:12.273 Error Message: Unable to locate element: {"method":"id","selector":"promotional_code"}
+18:15:12.274 Stacktrace: 
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementById(String id)
+   at OpenQA.Selenium.By.<>c__DisplayClass2.<Id>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at MarsAir.Search.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 75
+18:15:13.465 Plugin [Html Report] with pid [8868] has exited
+18:15:13.567 Specifications:	1 executed	0 passed	1 failed	0 skipped
+18:15:13.569 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+18:15:13.571 
+Total time taken: 9.37s
+18:16:50.868 # ﻿Discounts
+18:16:50.876 ## Apply valid discount
+18:16:50.881 * A user searches for an available flight
+18:16:50.881 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+18:16:52.644 * Select "July" from the "departing" field
+18:16:52.924 * Select "December (two years from now)" from the "returning" field
+18:16:53.145 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+18:16:55.397 Failed Step: The user enters a discount for a promotional code
+18:16:55.398 Error Message: Expected string "Search Results\r\nSeats available!\r\nPromotional code IR1-MAF-001HQ2-YQZ-002 used: 10%!d(MISSING)iscount!\r\nCall now on 0800 MARSAIR to book!\r\nBack" to contain "used: 20".
+18:16:55.400 Stacktrace: 
+   at FluentAssertions.Execution.FallbackTestFramework.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\Shared\Execution\FallbackTestFramework.cs:line 21
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Net40\Execution\TestFrameworkProvider.cs:line 42
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\DefaultAssertionStrategy.cs:line 25
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\AssertionScope.cs:line 197
+   at FluentAssertions.Primitives.StringAssertions.Contain(String expected, String because, Object[] reasonArgs) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Primitives\StringAssertions.cs:line 620
+   at MarsAir.Search.Search.DiscountAmount(Table table) in c:\Projects\MarsAir\MarsAir\Search\Search.cs:line 80
+18:16:57.101 Plugin [Html Report] with pid [7180] has exited
+18:16:57.201 Specifications:	1 executed	0 passed	1 failed	0 skipped
+18:16:57.205 Scenarios:	1 executed	0 passed	1 failed	0 skipped
+18:16:57.207 
+Total time taken: 11.27s
+18:17:21.027 # ﻿Discounts
+18:17:21.034 ## Apply valid discount
+18:17:21.040 * A user searches for an available flight
+18:17:21.040 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+18:17:22.679 * Select "July" from the "departing" field
+18:17:22.964 * Select "December (two years from now)" from the "returning" field
+18:17:23.190 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+18:17:33.563 * Press "submit"
+18:17:34.387 * Assert user is informed, "Call now on 0800 MARSAIR to book!"
+18:17:36.244 Plugin [Html Report] with pid [8252] has exited
+18:17:36.345 Specifications:	1 executed	1 passed	0 failed	0 skipped
+18:17:36.347 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+18:17:36.350 
+Total time taken: 20.206s
+12:16:20.948 # ﻿Navigation to homepage
+12:16:20.956 ## MarsAir logo returns user to home
+12:16:20.960 * A user searches for an available flight
+12:16:20.960 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+12:16:23.643 * Select "July" from the "departing" field
+12:16:23.978 * Select "December (two years from now)" from the "returning" field
+12:16:24.218 * The user clicks the MarsAir logo
+12:16:24.591 * "Book a ticket to the red planet now!" is displayed on the page
+12:16:26.117 Plugin [Html Report] with pid [7544] has exited
+12:16:26.219 Specifications:	1 executed	1 passed	0 failed	0 skipped
+12:16:26.219 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+12:16:26.220 
+Total time taken: 9.415s
