@@ -780,3 +780,187 @@ Total time taken: 20.206s
 12:16:26.219 Scenarios:	1 executed	1 passed	0 failed	0 skipped
 12:16:26.220 
 Total time taken: 9.415s
+20:35:07.924 # ﻿Discounts
+20:35:07.930 ## Apply valid discount
+20:35:07.934 * A user searches for an available flight
+20:35:07.934 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:35:09.120 * Select "July" from the "departing" field
+20:35:09.254 * Select "December (two years from now)" from the "returning" field
+20:35:09.366 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+20:35:14.018 ## Apply invalid discount
+20:35:14.018 * A user searches for an available flight
+20:35:14.018 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:35:14.236 * Select "July" from the "departing" field
+20:35:14.344 * Select "December (two years from now)" from the "returning" field
+20:35:14.442 * The user enters an invalid discount for a promotional code 
+     |discountcode|
+     |------------|
+     |x           |
+     |£          |
+     |五         |
+     |            |
+20:35:14.954 Failed Step: The user enters an invalid discount for a promotional code
+20:35:14.955 Error Message: Expected string "Search Results\r\nSeats available!\r\nSorry, code JK-IQF-00 is not valid\r\nCall now on 0800 MARSAIR to book!\r\nBack" to contain "Sorry, code x is not valid".
+20:35:14.957 Stacktrace: 
+   at FluentAssertions.Execution.FallbackTestFramework.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\Shared\Execution\FallbackTestFramework.cs:line 21
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Net40\Execution\TestFrameworkProvider.cs:line 42
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\DefaultAssertionStrategy.cs:line 25
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Execution\AssertionScope.cs:line 197
+   at FluentAssertions.Primitives.StringAssertions.Contain(String expected, String because, Object[] reasonArgs) in z:\Builds\work\eed5b735bfe0fb8d\FluentAssertions.Core\Primitives\StringAssertions.cs:line 620
+   at MarsAir.Pages.MarsAirHomePage.AssertContentText(String textToAssert) in c:\Projects\MarsAir\MarsAir\Pages\MarsAirHomePage.cs:line 41
+   at MarsAir.Tests.Search.InvalidDiscount(Table table) in c:\Projects\MarsAir\MarsAir\Tests\MarsAirTests.cs:line 105
+20:35:15.299 Plugin [Html Report] with pid [4192] has exited
+20:35:15.400 Specifications:	1 executed	0 passed	1 failed	0 skipped
+20:35:15.400 Scenarios:	2 executed	1 passed	1 failed	0 skipped
+20:35:15.400 
+Total time taken: 9.164s
+20:36:05.953 # ﻿Discounts
+20:36:05.960 ## Apply valid discount
+20:36:05.965 * A user searches for an available flight
+20:36:05.965 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:36:07.165 * Select "July" from the "departing" field
+20:36:07.294 * Select "December (two years from now)" from the "returning" field
+20:36:07.407 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+20:36:12.691 ## Apply invalid discount
+20:36:12.692 * A user searches for an available flight
+20:36:12.692 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:36:12.912 * Select "July" from the "departing" field
+20:36:13.022 * Select "December (two years from now)" from the "returning" field
+20:36:13.119 * The user enters an invalid discount for a promotional code 
+     |discountcode|
+     |------------|
+     |x           |
+     |£          |
+     |五         |
+     |            |
+20:36:15.741 Plugin [Html Report] with pid [4552] has exited
+20:36:15.843 Specifications:	1 executed	1 passed	0 failed	0 skipped
+20:36:15.843 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+20:36:15.843 
+Total time taken: 11.562s
+20:36:58.618 # ﻿Discounts
+20:36:58.626 ## Apply valid discount
+20:36:58.630 * A user searches for an available flight
+20:36:58.630 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:36:59.819 * Select "July" from the "departing" field
+20:36:59.947 * Select "December (two years from now)" from the "returning" field
+20:37:00.059 * The user enters a discount for a promotional code 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+20:37:05.401 ## Apply invalid discount
+20:37:05.402 * A user searches for an available flight
+20:37:05.402 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:37:05.627 * Select "July" from the "departing" field
+20:37:05.735 * Select "December (two years from now)" from the "returning" field
+20:37:05.834 * The user enters an invalid discount for a promotional code 
+     |discountcode|
+     |------------|
+     |x           |
+     |£          |
+     |五         |
+     |            |
+20:37:08.475 Plugin [Html Report] with pid [7968] has exited
+20:37:08.575 Specifications:	1 executed	1 passed	0 failed	0 skipped
+20:37:08.575 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+20:37:08.575 
+Total time taken: 11.632s
+20:39:15.675 # ﻿Discounts
+20:39:15.682 ## Apply valid discount
+20:39:15.686 * A user searches for an available flight
+20:39:15.686 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:39:16.875 * Select "July" from the "departing" field
+20:39:17.003 * Select "December (two years from now)" from the "returning" field
+20:39:17.114 * The user enters a discount for a promotional code and is advised the discount is valid 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+20:39:22.521 ## Apply invalid discount
+20:39:22.524 * A user searches for an available flight
+20:39:22.524 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:39:22.843 * Select "July" from the "departing" field
+20:39:22.939 * Select "December (two years from now)" from the "returning" field
+20:39:23.073 * The user enters an invalid discount for a promotional code and is advised the discount is invalid 
+     |discountcode|
+     |------------|
+     |x           |
+     |£          |
+     |五         |
+     |            |
+20:39:25.957 Plugin [Html Report] with pid [5160] has exited
+20:39:26.058 Specifications:	1 executed	1 passed	0 failed	0 skipped
+20:39:26.058 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+20:39:26.060 
+Total time taken: 12.061s
+20:40:25.899 # ﻿Discounts
+20:40:25.909 ## Apply valid discount
+20:40:25.914 * A user searches for an available flight
+20:40:25.914 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:40:27.189 * Select "July" from the "departing" field
+20:40:27.327 * Select "December (two years from now)" from the "returning" field
+20:40:27.513 * The user enters a discount for a promotional code and is advised the discount is valid 
+     |discountnumber|discountpercent|
+     |--------------|---------------|
+     |1             |10             |
+     |2             |20             |
+     |3             |30             |
+     |4             |40             |
+     |5             |50             |
+     |6             |60             |
+     |7             |70             |
+     |8             |80             |
+     |9             |90             |
+20:40:33.483 ## Apply invalid discount
+20:40:33.484 * A user searches for an available flight
+20:40:33.484 * Navigate to MarsAir homepage "http://gdiagram.marsair.tw/"
+20:40:33.810 * Select "July" from the "departing" field
+20:40:33.908 * Select "December (two years from now)" from the "returning" field
+20:40:34.008 * The user enters an invalid discount for a promotional code and is advised the discount is invalid 
+     |discountcode|
+     |------------|
+     |x           |
+     |£          |
+     |五         |
+20:40:36.288 Plugin [Html Report] with pid [7412] has exited
+20:40:36.388 Specifications:	1 executed	1 passed	0 failed	0 skipped
+20:40:36.388 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+20:40:36.388 
+Total time taken: 12.256s

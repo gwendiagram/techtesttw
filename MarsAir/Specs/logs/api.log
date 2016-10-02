@@ -992,3 +992,153 @@
 12:16:16.518 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Navigation.spec
 12:16:16.518 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Discounts.spec
 12:16:16.575 Initializing steps cache with 34 steps
+20:35:05.850 Api Request Received: messageType:GetStepValueRequest messageId:63611037305838 stepValueRequest:<stepText:"The user enters a <discount> for discount of that number times 10" hasInlineTable:false > 
+20:35:05.851 Sending API response: messageType:GetStepValueResponse messageId:63611037305838 stepValueResponse:<stepValue:<stepValue:"The user enters a {} for discount of that number times 10" parameterizedStepValue:"The user enters a <discount> for discount of that number times 10" parameters:"discount" > > 
+20:35:05.864 Api Request Received: messageType:GetStepValueRequest messageId:63611037305864 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+20:35:05.864 Sending API response: messageType:GetStepValueResponse messageId:63611037305864 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+20:35:05.864 Api Request Received: messageType:GetStepValueRequest messageId:63611037305864 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+20:35:05.864 Sending API response: messageType:GetStepValueResponse messageId:63611037305864 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+20:35:05.864 Api Request Received: messageType:GetStepValueRequest messageId:63611037305864 stepValueRequest:<stepText:"Press submit" hasInlineTable:false > 
+20:35:05.865 Sending API response: messageType:GetStepValueResponse messageId:63611037305864 stepValueResponse:<stepValue:<stepValue:"Press submit" parameterizedStepValue:"Press submit" > > 
+20:35:05.865 Api Request Received: messageType:GetStepValueRequest messageId:63611037305865 stepValueRequest:<stepText:"Assert user is informed, <availability>" hasInlineTable:false > 
+20:35:05.865 Sending API response: messageType:GetStepValueResponse messageId:63611037305865 stepValueResponse:<stepValue:<stepValue:"Assert user is informed, {}" parameterizedStepValue:"Assert user is informed, <availability>" parameters:"availability" > > 
+20:35:05.866 Api Request Received: messageType:GetStepValueRequest messageId:63611037305866 stepValueRequest:<stepText:"The user enters a discount for a promotional code <table>" hasInlineTable:false > 
+20:35:05.867 Sending API response: messageType:GetStepValueResponse messageId:63611037305866 stepValueResponse:<stepValue:<stepValue:"The user enters a discount for a promotional code {}" parameterizedStepValue:"The user enters a discount for a promotional code <table>" parameters:"table" > > 
+20:35:05.867 Api Request Received: messageType:GetStepValueRequest messageId:63611037305867 stepValueRequest:<stepText:"The user enters an invalid discount for a promotional code <table>" hasInlineTable:false > 
+20:35:05.867 Sending API response: messageType:GetStepValueResponse messageId:63611037305867 stepValueResponse:<stepValue:<stepValue:"The user enters an invalid discount for a promotional code {}" parameterizedStepValue:"The user enters an invalid discount for a promotional code <table>" parameters:"table" > > 
+20:35:05.867 Api Request Received: messageType:GetStepValueRequest messageId:63611037305867 stepValueRequest:<stepText:"The user clicks the MarsAir logo" hasInlineTable:false > 
+20:35:05.867 Sending API response: messageType:GetStepValueResponse messageId:63611037305867 stepValueResponse:<stepValue:<stepValue:"The user clicks the MarsAir logo" parameterizedStepValue:"The user clicks the MarsAir logo" > > 
+20:35:05.869 Api Request Received: messageType:GetStepValueRequest messageId:63611037305869 stepValueRequest:<stepText:"<salestext> is displayed on the page" hasInlineTable:false > 
+20:35:05.869 Sending API response: messageType:GetStepValueResponse messageId:63611037305869 stepValueResponse:<stepValue:<stepValue:"{} is displayed on the page" parameterizedStepValue:"<salestext> is displayed on the page" parameters:"salestext" > > 
+20:35:05.943 Initializing concepts cache with 2 concepts
+20:35:05.943 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:35:05.943 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:35:05.949 Initializing specs cache with 3 specs
+20:35:05.952 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Discounts.spec
+20:35:05.952 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+20:35:05.952 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Navigation.spec
+20:35:05.952 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+20:35:05.952 Found 5 files
+20:35:05.954 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+20:35:05.954 Found 2 files
+20:35:06.008 Initializing steps cache with 34 steps
+20:36:03.884 Api Request Received: messageType:GetStepValueRequest messageId:63611037363874 stepValueRequest:<stepText:"The user enters a <discount> for discount of that number times 10" hasInlineTable:false > 
+20:36:03.885 Sending API response: messageType:GetStepValueResponse messageId:63611037363874 stepValueResponse:<stepValue:<stepValue:"The user enters a {} for discount of that number times 10" parameterizedStepValue:"The user enters a <discount> for discount of that number times 10" parameters:"discount" > > 
+20:36:03.895 Api Request Received: messageType:GetStepValueRequest messageId:63611037363895 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+20:36:03.895 Sending API response: messageType:GetStepValueResponse messageId:63611037363895 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+20:36:03.896 Api Request Received: messageType:GetStepValueRequest messageId:63611037363896 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+20:36:03.896 Sending API response: messageType:GetStepValueResponse messageId:63611037363896 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+20:36:03.896 Api Request Received: messageType:GetStepValueRequest messageId:63611037363896 stepValueRequest:<stepText:"Press submit" hasInlineTable:false > 
+20:36:03.896 Sending API response: messageType:GetStepValueResponse messageId:63611037363896 stepValueResponse:<stepValue:<stepValue:"Press submit" parameterizedStepValue:"Press submit" > > 
+20:36:03.898 Api Request Received: messageType:GetStepValueRequest messageId:63611037363896 stepValueRequest:<stepText:"Assert user is informed, <availability>" hasInlineTable:false > 
+20:36:03.898 Sending API response: messageType:GetStepValueResponse messageId:63611037363896 stepValueResponse:<stepValue:<stepValue:"Assert user is informed, {}" parameterizedStepValue:"Assert user is informed, <availability>" parameters:"availability" > > 
+20:36:03.898 Api Request Received: messageType:GetStepValueRequest messageId:63611037363898 stepValueRequest:<stepText:"The user enters a discount for a promotional code <table>" hasInlineTable:false > 
+20:36:03.898 Sending API response: messageType:GetStepValueResponse messageId:63611037363898 stepValueResponse:<stepValue:<stepValue:"The user enters a discount for a promotional code {}" parameterizedStepValue:"The user enters a discount for a promotional code <table>" parameters:"table" > > 
+20:36:03.898 Api Request Received: messageType:GetStepValueRequest messageId:63611037363898 stepValueRequest:<stepText:"The user enters an invalid discount for a promotional code <table>" hasInlineTable:false > 
+20:36:03.898 Sending API response: messageType:GetStepValueResponse messageId:63611037363898 stepValueResponse:<stepValue:<stepValue:"The user enters an invalid discount for a promotional code {}" parameterizedStepValue:"The user enters an invalid discount for a promotional code <table>" parameters:"table" > > 
+20:36:03.899 Api Request Received: messageType:GetStepValueRequest messageId:63611037363899 stepValueRequest:<stepText:"The user clicks the MarsAir logo" hasInlineTable:false > 
+20:36:03.899 Sending API response: messageType:GetStepValueResponse messageId:63611037363899 stepValueResponse:<stepValue:<stepValue:"The user clicks the MarsAir logo" parameterizedStepValue:"The user clicks the MarsAir logo" > > 
+20:36:03.899 Api Request Received: messageType:GetStepValueRequest messageId:63611037363899 stepValueRequest:<stepText:"<salestext> is displayed on the page" hasInlineTable:false > 
+20:36:03.899 Sending API response: messageType:GetStepValueResponse messageId:63611037363899 stepValueResponse:<stepValue:<stepValue:"{} is displayed on the page" parameterizedStepValue:"<salestext> is displayed on the page" parameters:"salestext" > > 
+20:36:03.969 Initializing concepts cache with 2 concepts
+20:36:03.969 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:36:03.969 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:36:03.973 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+20:36:03.974 Found 5 files
+20:36:03.980 Initializing specs cache with 3 specs
+20:36:03.980 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Discounts.spec
+20:36:03.980 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+20:36:03.980 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Navigation.spec
+20:36:03.980 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+20:36:03.980 Found 2 files
+20:36:04.036 Initializing steps cache with 34 steps
+20:36:56.555 Api Request Received: messageType:GetStepValueRequest messageId:63611037416544 stepValueRequest:<stepText:"The user enters a <discount> for discount of that number times 10" hasInlineTable:false > 
+20:36:56.555 Sending API response: messageType:GetStepValueResponse messageId:63611037416544 stepValueResponse:<stepValue:<stepValue:"The user enters a {} for discount of that number times 10" parameterizedStepValue:"The user enters a <discount> for discount of that number times 10" parameters:"discount" > > 
+20:36:56.565 Api Request Received: messageType:GetStepValueRequest messageId:63611037416565 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+20:36:56.565 Sending API response: messageType:GetStepValueResponse messageId:63611037416565 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+20:36:56.566 Api Request Received: messageType:GetStepValueRequest messageId:63611037416566 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+20:36:56.566 Sending API response: messageType:GetStepValueResponse messageId:63611037416566 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+20:36:56.566 Api Request Received: messageType:GetStepValueRequest messageId:63611037416566 stepValueRequest:<stepText:"Press submit" hasInlineTable:false > 
+20:36:56.566 Sending API response: messageType:GetStepValueResponse messageId:63611037416566 stepValueResponse:<stepValue:<stepValue:"Press submit" parameterizedStepValue:"Press submit" > > 
+20:36:56.567 Api Request Received: messageType:GetStepValueRequest messageId:63611037416566 stepValueRequest:<stepText:"Assert user is informed, <availability>" hasInlineTable:false > 
+20:36:56.567 Sending API response: messageType:GetStepValueResponse messageId:63611037416566 stepValueResponse:<stepValue:<stepValue:"Assert user is informed, {}" parameterizedStepValue:"Assert user is informed, <availability>" parameters:"availability" > > 
+20:36:56.569 Api Request Received: messageType:GetStepValueRequest messageId:63611037416569 stepValueRequest:<stepText:"The user enters a discount for a promotional code <table>" hasInlineTable:false > 
+20:36:56.569 Sending API response: messageType:GetStepValueResponse messageId:63611037416569 stepValueResponse:<stepValue:<stepValue:"The user enters a discount for a promotional code {}" parameterizedStepValue:"The user enters a discount for a promotional code <table>" parameters:"table" > > 
+20:36:56.569 Api Request Received: messageType:GetStepValueRequest messageId:63611037416569 stepValueRequest:<stepText:"The user enters an invalid discount for a promotional code <table>" hasInlineTable:false > 
+20:36:56.569 Sending API response: messageType:GetStepValueResponse messageId:63611037416569 stepValueResponse:<stepValue:<stepValue:"The user enters an invalid discount for a promotional code {}" parameterizedStepValue:"The user enters an invalid discount for a promotional code <table>" parameters:"table" > > 
+20:36:56.569 Api Request Received: messageType:GetStepValueRequest messageId:63611037416569 stepValueRequest:<stepText:"The user clicks the MarsAir logo" hasInlineTable:false > 
+20:36:56.569 Sending API response: messageType:GetStepValueResponse messageId:63611037416569 stepValueResponse:<stepValue:<stepValue:"The user clicks the MarsAir logo" parameterizedStepValue:"The user clicks the MarsAir logo" > > 
+20:36:56.569 Api Request Received: messageType:GetStepValueRequest messageId:63611037416569 stepValueRequest:<stepText:"<salestext> is displayed on the page" hasInlineTable:false > 
+20:36:56.569 Sending API response: messageType:GetStepValueResponse messageId:63611037416569 stepValueResponse:<stepValue:<stepValue:"{} is displayed on the page" parameterizedStepValue:"<salestext> is displayed on the page" parameters:"salestext" > > 
+20:36:56.637 Initializing concepts cache with 2 concepts
+20:36:56.637 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:36:56.637 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:36:56.643 Initializing specs cache with 3 specs
+20:36:56.645 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Discounts.spec
+20:36:56.645 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+20:36:56.645 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Navigation.spec
+20:36:56.645 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+20:36:56.645 Found 5 files
+20:36:56.648 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+20:36:56.648 Found 2 files
+20:36:56.717 Initializing steps cache with 34 steps
+20:39:13.593 Api Request Received: messageType:GetStepValueRequest messageId:63611037553580 stepValueRequest:<stepText:"The user enters a <discount> for discount of that number times 10" hasInlineTable:false > 
+20:39:13.593 Sending API response: messageType:GetStepValueResponse messageId:63611037553580 stepValueResponse:<stepValue:<stepValue:"The user enters a {} for discount of that number times 10" parameterizedStepValue:"The user enters a <discount> for discount of that number times 10" parameters:"discount" > > 
+20:39:13.603 Api Request Received: messageType:GetStepValueRequest messageId:63611037553603 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+20:39:13.603 Sending API response: messageType:GetStepValueResponse messageId:63611037553603 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+20:39:13.603 Api Request Received: messageType:GetStepValueRequest messageId:63611037553603 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+20:39:13.603 Sending API response: messageType:GetStepValueResponse messageId:63611037553603 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+20:39:13.604 Api Request Received: messageType:GetStepValueRequest messageId:63611037553604 stepValueRequest:<stepText:"Press submit" hasInlineTable:false > 
+20:39:13.604 Sending API response: messageType:GetStepValueResponse messageId:63611037553604 stepValueResponse:<stepValue:<stepValue:"Press submit" parameterizedStepValue:"Press submit" > > 
+20:39:13.604 Api Request Received: messageType:GetStepValueRequest messageId:63611037553604 stepValueRequest:<stepText:"Assert user is informed, <availability>" hasInlineTable:false > 
+20:39:13.604 Sending API response: messageType:GetStepValueResponse messageId:63611037553604 stepValueResponse:<stepValue:<stepValue:"Assert user is informed, {}" parameterizedStepValue:"Assert user is informed, <availability>" parameters:"availability" > > 
+20:39:13.606 Api Request Received: messageType:GetStepValueRequest messageId:63611037553606 stepValueRequest:<stepText:"The user enters a discount for a promotional code and is advised the discount is valid <table>" hasInlineTable:false > 
+20:39:13.606 Sending API response: messageType:GetStepValueResponse messageId:63611037553606 stepValueResponse:<stepValue:<stepValue:"The user enters a discount for a promotional code and is advised the discount is valid {}" parameterizedStepValue:"The user enters a discount for a promotional code and is advised the discount is valid <table>" parameters:"table" > > 
+20:39:13.606 Api Request Received: messageType:GetStepValueRequest messageId:63611037553606 stepValueRequest:<stepText:"The user enters an invalid discount for a promotional code and is advised the discount is invalid <table>" hasInlineTable:false > 
+20:39:13.606 Sending API response: messageType:GetStepValueResponse messageId:63611037553606 stepValueResponse:<stepValue:<stepValue:"The user enters an invalid discount for a promotional code and is advised the discount is invalid {}" parameterizedStepValue:"The user enters an invalid discount for a promotional code and is advised the discount is invalid <table>" parameters:"table" > > 
+20:39:13.606 Api Request Received: messageType:GetStepValueRequest messageId:63611037553606 stepValueRequest:<stepText:"The user clicks the MarsAir logo" hasInlineTable:false > 
+20:39:13.606 Sending API response: messageType:GetStepValueResponse messageId:63611037553606 stepValueResponse:<stepValue:<stepValue:"The user clicks the MarsAir logo" parameterizedStepValue:"The user clicks the MarsAir logo" > > 
+20:39:13.606 Api Request Received: messageType:GetStepValueRequest messageId:63611037553606 stepValueRequest:<stepText:"<salestext> is displayed on the page" hasInlineTable:false > 
+20:39:13.608 Sending API response: messageType:GetStepValueResponse messageId:63611037553606 stepValueResponse:<stepValue:<stepValue:"{} is displayed on the page" parameterizedStepValue:"<salestext> is displayed on the page" parameters:"salestext" > > 
+20:39:13.676 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+20:39:13.676 Found 5 files
+20:39:13.677 Initializing concepts cache with 2 concepts
+20:39:13.677 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:39:13.677 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:39:13.681 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+20:39:13.685 Found 2 files
+20:39:13.685 Initializing specs cache with 3 specs
+20:39:13.685 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Discounts.spec
+20:39:13.685 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+20:39:13.685 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Navigation.spec
+20:39:13.770 Initializing steps cache with 34 steps
+20:40:23.734 Api Request Received: messageType:GetStepValueRequest messageId:63611037623723 stepValueRequest:<stepText:"The user enters a <discount> for discount of that number times 10" hasInlineTable:false > 
+20:40:23.736 Sending API response: messageType:GetStepValueResponse messageId:63611037623723 stepValueResponse:<stepValue:<stepValue:"The user enters a {} for discount of that number times 10" parameterizedStepValue:"The user enters a <discount> for discount of that number times 10" parameters:"discount" > > 
+20:40:23.746 Api Request Received: messageType:GetStepValueRequest messageId:63611037623746 stepValueRequest:<stepText:"Navigate to MarsAir homepage <url>" hasInlineTable:false > 
+20:40:23.746 Sending API response: messageType:GetStepValueResponse messageId:63611037623746 stepValueResponse:<stepValue:<stepValue:"Navigate to MarsAir homepage {}" parameterizedStepValue:"Navigate to MarsAir homepage <url>" parameters:"url" > > 
+20:40:23.746 Api Request Received: messageType:GetStepValueRequest messageId:63611037623746 stepValueRequest:<stepText:"Select <month> from the <direction> field" hasInlineTable:false > 
+20:40:23.746 Sending API response: messageType:GetStepValueResponse messageId:63611037623746 stepValueResponse:<stepValue:<stepValue:"Select {} from the {} field" parameterizedStepValue:"Select <month> from the <direction> field" parameters:"month" parameters:"direction" > > 
+20:40:23.747 Api Request Received: messageType:GetStepValueRequest messageId:63611037623747 stepValueRequest:<stepText:"Press submit" hasInlineTable:false > 
+20:40:23.747 Sending API response: messageType:GetStepValueResponse messageId:63611037623747 stepValueResponse:<stepValue:<stepValue:"Press submit" parameterizedStepValue:"Press submit" > > 
+20:40:23.747 Api Request Received: messageType:GetStepValueRequest messageId:63611037623747 stepValueRequest:<stepText:"Assert user is informed, <availability>" hasInlineTable:false > 
+20:40:23.747 Sending API response: messageType:GetStepValueResponse messageId:63611037623747 stepValueResponse:<stepValue:<stepValue:"Assert user is informed, {}" parameterizedStepValue:"Assert user is informed, <availability>" parameters:"availability" > > 
+20:40:23.749 Api Request Received: messageType:GetStepValueRequest messageId:63611037623748 stepValueRequest:<stepText:"The user enters a discount for a promotional code and is advised the discount is valid <table>" hasInlineTable:false > 
+20:40:23.749 Sending API response: messageType:GetStepValueResponse messageId:63611037623748 stepValueResponse:<stepValue:<stepValue:"The user enters a discount for a promotional code and is advised the discount is valid {}" parameterizedStepValue:"The user enters a discount for a promotional code and is advised the discount is valid <table>" parameters:"table" > > 
+20:40:23.749 Api Request Received: messageType:GetStepValueRequest messageId:63611037623749 stepValueRequest:<stepText:"The user enters an invalid discount for a promotional code and is advised the discount is invalid <table>" hasInlineTable:false > 
+20:40:23.749 Sending API response: messageType:GetStepValueResponse messageId:63611037623749 stepValueResponse:<stepValue:<stepValue:"The user enters an invalid discount for a promotional code and is advised the discount is invalid {}" parameterizedStepValue:"The user enters an invalid discount for a promotional code and is advised the discount is invalid <table>" parameters:"table" > > 
+20:40:23.749 Api Request Received: messageType:GetStepValueRequest messageId:63611037623749 stepValueRequest:<stepText:"The user clicks the MarsAir logo" hasInlineTable:false > 
+20:40:23.749 Sending API response: messageType:GetStepValueResponse messageId:63611037623749 stepValueResponse:<stepValue:<stepValue:"The user clicks the MarsAir logo" parameterizedStepValue:"The user clicks the MarsAir logo" > > 
+20:40:23.750 Api Request Received: messageType:GetStepValueRequest messageId:63611037623750 stepValueRequest:<stepText:"<salestext> is displayed on the page" hasInlineTable:false > 
+20:40:23.750 Sending API response: messageType:GetStepValueResponse messageId:63611037623750 stepValueResponse:<stepValue:<stepValue:"{} is displayed on the page" parameterizedStepValue:"<salestext> is displayed on the page" parameters:"salestext" > > 
+20:40:23.827 Initializing concepts cache with 2 concepts
+20:40:23.827 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:40:23.827 Adding concepts from c:\Projects\MarsAir\MarsAir\specs\Concepts.cpt
+20:40:23.835 Initializing specs cache with 3 specs
+20:40:23.835 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Discounts.spec
+20:40:23.835 Adding specs from c:\Projects\MarsAir\MarsAir\specs\FlightSearch.spec
+20:40:23.835 Adding specs from c:\Projects\MarsAir\MarsAir\specs\Navigation.spec
+20:40:23.838 Watching directory: c:\Projects\MarsAir\MarsAir\specs
+20:40:23.838 Found 5 files
+20:40:23.840 Watching directory: c:\Projects\MarsAir\MarsAir\specs\logs
+20:40:23.840 Found 2 files
+20:40:23.902 Initializing steps cache with 34 steps
